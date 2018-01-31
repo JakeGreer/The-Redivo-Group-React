@@ -1,0 +1,44 @@
+.main-color {
+    background-color: #0eae9b;
+}
+
+.top {
+    background-color: #ececec;
+    color: #000000;
+    padding: 25px;
+    padding-left: 300px;
+    max-height: 150px;
+}
+
+.bottom {
+    background-color: #0eae9b;
+    max-height: 150px;
+}
+
+.tabLine {
+    float: left;
+}
+
+.phoneNum {
+    float: right;
+    margin-right: 20%;
+}
+
+.logo-img {
+    position: relative;
+    z-index: 99;
+    display: block;
+}
+
+.logo {
+    position: absolute;
+    max-width: 140px;
+    margin-right: 50px;
+    margin-left: 18%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
