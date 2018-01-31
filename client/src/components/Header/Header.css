@@ -6,7 +6,6 @@
     background-color: #ececec;
     color: #000000;
     padding: 25px;
-    padding-left: 300px;
     max-height: 150px;
 }
 
@@ -17,11 +16,12 @@
 
 .tabLine {
     float: left;
+    margin-left: 20%;
 }
 
 .phoneNum {
     float: right;
-    margin-right: 20%;
+    margin-right: 10%;
 }
 
 .logo-img {
@@ -34,7 +34,7 @@
     position: absolute;
     max-width: 140px;
     margin-right: 50px;
-    margin-left: 18%;
+    margin-left: 10%;
 }
 
 .clearfix::after {
