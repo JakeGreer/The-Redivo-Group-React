@@ -1,17 +1,18 @@
 .main-color {
     background-color: #0eae9b;
 }
+.main-color-txt {
+    color: #0eae9b;
+}
 
 .top {
     background-color: #ececec;
     color: #000000;
     padding: 25px;
-    height: 30px;
 }
 
 .bottom {
     background-color: #0eae9b;
-    max-height: 150px;
 }
 .nav {
     padding: 6px;
@@ -25,32 +26,27 @@
     background-color: black !important;
 }
 
-.tabLine {
-    float: left;
-    margin-left: 20%;
+.address-header {
+    padding-left: 3%;
 }
 
-.phoneNum {
-    float: right;
-    margin-right: 10%;
+.phone {
+    font-size: 22px;
 }
+
 
 .logo-img {
     position: relative;
     z-index: 99;
-    display: block;
+    display: inline-block;
 }
 
 .logo {
     position: absolute;
-    height: 200px;
-    width: 200px;
-    margin-right: 50px;
-    margin-left: 10%;
+    bottom: 0;
+    left: 15%;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+
+
+
