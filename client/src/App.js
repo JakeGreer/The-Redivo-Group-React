@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import Header from "./components/Header";
-import SelectorBtn from "./components/Selector-Button"
-import "./App.css";
+import React, { Component } from 'react';
+import Header from "./components/Header"
+import Carousel from "./components/Carousel"
+import './App.css';
 
 class App extends Component {
   render() {
@@ -9,6 +9,8 @@ class App extends Component {
       <div className="App">
         <Header />
         <SelectorBtn />
+        <Carousel />
+>>>>>>> master
       </div>
     );
   }
