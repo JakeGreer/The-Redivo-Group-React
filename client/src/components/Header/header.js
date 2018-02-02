@@ -8,7 +8,7 @@ class Header extends Component {
         return (
             <div className="header">
                 <div className="logo clearfix">
-                    <a id="logo"><img src={Logo} className="top-logo" className="logo-img img-responsive" /></a>
+                    <a id="logo"><img src={Logo} className="logo-img img-responsive top-logo" /></a>
                 </div>
                 <div className="top">
                     <div className="container">
@@ -22,15 +22,20 @@ class Header extends Component {
                 </div>
                 <div className="clearfix"></div>
                 <div className="bottom">
-                    <nav>
-                        <ul className="nav nav-pills">
-                            <li className="active"><a href="index.html">HOME</a></li>
-                            <li><a href="properties.html">Properties</a></li>
-                            <li><a href="about.html">ABOUT</a></li>
-                            <li ><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">CONTACT US</a></li>
-                        </ul>
-                    </nav>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Disabled</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         )

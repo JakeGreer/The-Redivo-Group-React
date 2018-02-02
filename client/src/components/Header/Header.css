@@ -6,12 +6,23 @@
     background-color: #ececec;
     color: #000000;
     padding: 25px;
-    max-height: 150px;
+    height: 30px;
 }
 
 .bottom {
     background-color: #0eae9b;
     max-height: 150px;
+}
+.nav {
+    padding: 6px;
+}
+
+.bottom ul li a {
+    color: white;
+}
+
+.bottom ul li a:hover {
+    background-color: black !important;
 }
 
 .tabLine {
@@ -32,7 +43,8 @@
 
 .logo {
     position: absolute;
-    max-width: 140px;
+    height: 200px;
+    width: 200px;
     margin-right: 50px;
     margin-left: 10%;
 }

@@ -27,8 +27,8 @@ if (process.env.NODE_ENV === "production") {
 
 // Routes
 // =============================================================
-const routes = require("./routes")
-app.use(routes);
+// const routes = require("./routes")
+// app.use(routes);
 
 // Send every request to the React app
 // Define any API routes before this runs
