@@ -12,7 +12,6 @@ var morgan = require('morgan');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-
 // Sets up the Express App
 // =============================================================
 app.use('/public', express.static('public')) // Static directory
