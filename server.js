@@ -12,16 +12,6 @@ var morgan = require('morgan');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Set up promises with mongoose
-mongoose.Promise = global.Promise;
-// Connect to the Mongo DB
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://127.0.0.1/project-lfg",
-  {
-    useMongoClient: true
-  }
-);
-
 // Sets up the Express App
 // =============================================================
 app.use('/public', express.static('public')) // Static directory
