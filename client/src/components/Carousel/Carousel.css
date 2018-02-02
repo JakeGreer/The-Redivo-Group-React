@@ -1,0 +1,13 @@
+.carousel{
+    width: 100% !important;
+}
+
+.carousel-div{
+    overflow:hidden !important;
+    max-height: 520px !important;
+    width: 100%; 
+}
+
+.slide-image{
+    width: 100%;
+}
