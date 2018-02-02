@@ -28,7 +28,8 @@
     "dotenv": "^5.0.0",
     "express": "^4.16.2",
     "morgan": "^1.9.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "react-router-dom": "^4.2.2"
   },
   "proxy": "htttp://localhost:3000"
 }
