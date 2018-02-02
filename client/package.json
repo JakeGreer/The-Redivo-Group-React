@@ -2,7 +2,9 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "dependencies": {
+    "cors": "^2.8.4",
     "dotenv": "^5.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -15,3 +17,4 @@
     "eject": "react-scripts eject"
   }
 }
+
