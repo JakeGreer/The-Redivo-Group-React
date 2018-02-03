@@ -2,7 +2,7 @@ import React from "react";
 import './Carousel.css';
 
 const Carousel = (props) => (
-
+        <div className='carousel-div'>
             <div id="carouselExampleIndicators" className="carousel slide" interval="5000" data-ride="carousel">
                 <ol className="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -12,15 +12,15 @@ const Carousel = (props) => (
 
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img className="img-fluid" src="../public/img/slide1a.jpg" alt="slide1 pic" />                        
+                        <img className="slide-image" src="../public/img/slide1a.jpg" alt="slide1 pic" />                        
                     </div>
 
                     <div className="carousel-item">
-                        <img className="" src="../public/img/slide2a.jpg" alt="slide2 pic" />
+                        <img className="slide-image" src="../public/img/slide2a.jpg" alt="slide2 pic" />
                     </div>
 
                     <div className="carousel-item">
-                        <img className="" src="../public/img/slide3a.jpg" alt="slide3 pic" />
+                        <img className="slide-image" src="../public/img/slide3a.jpg" alt="slide3 pic" />
                     </div>
 
                 </div>
@@ -32,10 +32,8 @@ const Carousel = (props) => (
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="sr-only">Next</span>
                 </a>
-                <div className='testimg'>
-                arhehagfhadfa
-                </div>
             </div>
+        </div>
 
 )
 

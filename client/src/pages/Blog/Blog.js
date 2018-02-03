@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 import  Jumbotron from "../../components/Jumbotron"
 import { Container } from "../../components/Grid"
-import "./Properties.css";
+import "./Blog.css";
 
-class Properties extends Component {
+class Blog extends Component {
     render() {
         return (
+            
             <div>
-                <Jumbotron header = "Properties"
+                <Jumbotron 
+                    header = "Blog"
                 />
                 <Container>
 
@@ -17,4 +19,4 @@ class Properties extends Component {
     }
 }
 
-export default Properties
+export default Blog

@@ -1,0 +1,32 @@
+#discover-container{
+    /* padding-left: 15% !important;
+    padding-right: 15% !important; */
+}
+
+#discover-first-row{
+    margin-top: 2.8rem;
+}
+
+.discover-h-container{
+    border-left: 2px solid #000000 !important;
+}
+  
+  .discover-h-a{
+    font-weight: bold;
+    text-align: left !important;
+    color: #000000;
+    margin: 0px 0px 0px 0px !important;
+    padding: 0px 0px 0px 15px !important;
+    font-family: 'Arial', sans-serif !important;
+    display: block;
+  }
+    
+  .discover-h-b{
+    font-weight: bold;
+    text-align: left !important;
+    color:  #0eae9b;
+    padding: 0px 0px 0px 15px !important;
+    margin: -10px 0px 0px 0px !important;
+    font-family: 'Arial', sans-serif !important;
+    display: block;
+  }
