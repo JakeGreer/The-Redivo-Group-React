@@ -8,12 +8,14 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
 const env = require('dotenv').load();
-var morgan = require('morgan');
+const cors = require('cors')
+const morgan = require('morgan');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Sets up the Express App
 // =============================================================
+app.use(cors()) // must be before BodyParser
 app.use('/public', express.static('public')) // Static directory
 app.use(morgan('dev')); // log every request to the console
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -23,7 +25,6 @@ app.use(bodyParser.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-
 
 // Routes
 // =============================================================

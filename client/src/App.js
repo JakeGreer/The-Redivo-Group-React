@@ -5,7 +5,6 @@ import Header from "./components/Header";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
-import Home from "./pages/Home";
 import Properties from "./pages/Properties";
 
 class App extends Component {
