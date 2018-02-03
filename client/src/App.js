@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from "./pages/Home"
 import './App.css';
 import Header from "./components/Header";
 import About from "./pages/About";
@@ -13,6 +14,7 @@ class App extends Component {
       <Router>
         <div>
           <Header />
+          <Home />
           <Route exact path="/about" component={About}/>
           <Route exact path="/blog" component={Blog}/>
           <Route exact path="/properties" component={Properties}/>
