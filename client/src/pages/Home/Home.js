@@ -9,10 +9,15 @@ const Home = (props) => {
     return(
         <div>
             <div className='carousel-container'>
-                <Carousel />
+                <div className='carousel-div'>
+                    <Carousel carouselName='headerCarousel' images={true} slides={['slide1a.jpg','slide2a.jpg','slide3a.jpg']} />
+                </div>
             </div>
             <div className='discover-container'>
                 <Discover />
+            </div>
+            <div className='testimonial-container' style={{backgroundImage:`url(${'../public/img/testimonial-bg.jpg'})`}}>
+                <Testimonial />
             </div>
         </div>
     )
