@@ -1,31 +1,28 @@
 import React from 'react'
-import './Discover.css'
+import './Testimonial.css'
 
-const Discover = (props) => {
+const Testimonial = (props) => {
 
     return(
         <div className='container'>
             <div className='row'>
                 <div className='col-md-12'>
 
-                    <div className='row' id='discover-first-row'>
+                    <div className='row' id='testimonial-first-row'>
                         <div className='col-md-8'>
-                            <div className='discover-text'>
-                                <div className='discover-h-container'>
-                                    <h1 className='discover-h-a'>DISCOVER THE REDIVO</h1>
-                                    <h1 className='discover-h-b'>GROUP DIFFERENCE</h1> 
+                            <div className='testimonial-text'>
+                                <div className='testimonial-h-container'>
+                                    <h1 className='testimonial-h-a'>testimonial THE REDIVO</h1>
+                                    <h1 className='testimonial-h-b'>GROUP DIFFERENCE</h1> 
                                 </div>
-                                <h4 className='discover-subtitle'>Experienced Real Estate Pro's you can trust</h4>
+                                <h4 className='testimonial-subtitle'>Experienced Real Estate Pro's you can trust</h4>
                                 <p>The Redivo Group performs real estate transactions at the highest level.
                                     Get the most out of your real estate transaction, work with a cutting edge
                                     Orange County real estate team that lives to give their clients the best service possible.
                                     Live Southern California luxury at its finest.</p>
 
                                 <div className='row'>
-                                <div className='col-md-4 profile-image-mobile text-center mx-auto'>
-                            <img className='profile-image img-fluid text-center mx-auto' src='../public/img/Rechelle.jpg' alt='Rachelle-img' />
-                        </div>
-                                    <div className='col-6'>
+                                    <div className='col-sm-6'>
                                         <ul className='checklist'>
                                             <li>
                                                 <i class="far fa-check-circle"/>
@@ -41,7 +38,7 @@ const Discover = (props) => {
                                             </li>
                                         </ul>
                                     </div>
-                                    <div className='col-6'>
+                                    <div className='col-sm-6'>
                                         <ul className='checklist'>
                                             <li>
                                                 <i class="far fa-check-circle"/>
@@ -61,8 +58,8 @@ const Discover = (props) => {
                                 <button href="#" class="btn know-btn">KNOW MORE</button>
                             </div>
                         </div>
-                        <div className='col-md-4 profile-image-desktop'>
-                            <img className='profile-image img-fluid' src='../public/img/Rechelle.jpg' alt='Rachelle-img' />
+                        <div className='col-md-4'>
+                            <img className='profile-image' src='../public/img/Rechelle.jpg' alt='Rachelle-img' />
                         </div>
                     </div>
                 </div>
@@ -71,4 +68,4 @@ const Discover = (props) => {
     )
 }
 
-export default Discover
+export default Testimonial
