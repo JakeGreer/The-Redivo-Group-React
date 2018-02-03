@@ -1,6 +1,13 @@
 .jumbotron {
-    
     background-size: cover;
     color: #fff;
-    text-shadow: 4px 4px 5px black;
+}
+
+.title {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
 }
