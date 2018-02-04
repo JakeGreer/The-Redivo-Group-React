@@ -24,7 +24,7 @@
 .testimonial-container{
     padding-top: 30px;
     background: #fff;
-    height: 800px;
+    height:100% !important;
     width: 100% !important;
     background-repeat: no-repeat;
     background-size: cover;
