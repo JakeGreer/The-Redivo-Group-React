@@ -21,7 +21,6 @@ class App extends Component {
           <Route exact path="/contact" component={Contact}/>
         </div>
       </Router>
-
     );
   }
 }

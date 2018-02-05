@@ -1,46 +1,48 @@
 import React, { Component } from 'react'
 import { Link  } from 'react-router-dom'
-import Logo from './Small-Logo.png'
 import "./Header.css"
 
-class Header extends Component {
+const Header = () => {
 
-    render() {
-        return (
-            <div className="header">
-                <div className="logo clearfix">
-                    <a id="logo"><img src={Logo} className="logo-img img-responsive top-logo" /></a>
-                </div>
-                <div className="top">
+    return(
+        <div className="header">
+            <div className="row">
+                <div className="top col-md-12 col-sm-12 col-xs-12">
+                    <div className="logo">
+                        <a id="logo"><img src='../public/img/Small-Logo.png' className="logo-img img-responsive" /></a>
+                    </div>
                     <div className="container">
-                        <div className="tabLine">
-                            209 AVENIDA DEL MAR | SUITE 104 | SAN CLEMENTE, CALIFORNIA
-                        </div>
-                        <div className="phoneNum">
-                            <i className="fa fa-phone"></i>949 838-5449
+                        <div className="row">
+                            <div className="col-md-10 col-xs-12 col-sm-12 main-color-txt address-header text-center">
+                                <strong>209 AVENIDA DEL MAR | SUITE 104 | SAN CLEMENTE, CALIFORNIA</strong>
+                            </div>
+                            <div className="col-md-2 col-xs-12 col-sm-12 phone main-color-txt phone" >
+                                <i className="fa fa-phone"></i><strong>949 838-5449</strong>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="clearfix"></div>
-                <div className="bottom">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <Link class="nav-link " to="/">Home</Link>
+            </div>
+            <div className="row">
+                <div className="bottom col-md-12">
+                    <ul className="nav justify-content-center">
+                        <li className="nav-item">
+                            <Link className="nav-link " to="/">Home</Link>
                         </li>
-                        <li class="nav-item">
-                            <Link class="nav-link" to="/properties">Properties</Link>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/properties">Properties</Link>
                         </li>
-                        <li class="nav-item">
-                            <Link class="nav-link" to="/blog">Blog</Link>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/blog">Blog</Link>
                         </li>
-                        <li class="nav-item">
-                            <Link class="nav-link" to="/contact">Contact</Link>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/contact">Contact</Link>
                         </li>
                     </ul>
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
 export default Header
