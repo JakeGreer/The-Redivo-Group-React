@@ -26,18 +26,18 @@ const Header = () => {
             </div>
             <div className="row">
                 <div className="bottom col-md-12">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <Link class="nav-link " to="/">Home</Link>
+                    <ul className="nav justify-content-center">
+                        <li className="nav-item">
+                            <Link className="nav-link " to="/">Home</Link>
                         </li>
-                        <li class="nav-item">
-                            <Link class="nav-link" to="/properties">Properties</Link>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/properties">Properties</Link>
                         </li>
-                        <li class="nav-item">
-                            <Link class="nav-link" to="/blog">Blog</Link>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/blog">Blog</Link>
                         </li>
-                        <li class="nav-item">
-                            <Link class="nav-link" to="/contact">Contact</Link>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/contact">Contact</Link>
                         </li>
                     </ul>
                 </div>

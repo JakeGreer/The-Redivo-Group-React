@@ -5,10 +5,11 @@
     border-style: solid;
     border-width: 5px;
     box-shadow: 3px 3px 15px black;
+    border-color: #0eae9b !important;
 }
 
 .area-img:hover {
-    border-color: #0eae9b;
+    border-color: #0eae9b !important;
     border-radius: 150px;
     box-shadow: 6px 6px 15px black;
 }

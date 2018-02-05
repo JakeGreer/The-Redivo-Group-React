@@ -29,15 +29,15 @@ const Discover = (props) => {
                                     <div className='col-6'>
                                         <ul className='checklist'>
                                             <li>
-                                                <i class="far fa-check-circle"/>
+                                                <i className="far fa-check-circle"/>
                                                 Locals
                                             </li>
                                             <li>
-                                                <i class="far fa-check-circle"/>
+                                                <i className="far fa-check-circle"/>
                                                 Family Oriented
                                             </li>
                                             <li>
-                                                <i class="far fa-check-circle"/>
+                                                <i className="far fa-check-circle"/>
                                                 Devoted
                                             </li>
                                         </ul>
@@ -45,15 +45,15 @@ const Discover = (props) => {
                                     <div className='col-6'>
                                         <ul className='checklist'>
                                             <li>
-                                                <i class="far fa-check-circle"/>
+                                                <i className="far fa-check-circle"/>
                                                 Logical
                                             </li>
                                             <li>
-                                                <i class="far fa-check-circle"/>
+                                                <i className="far fa-check-circle"/>
                                                 Knowledgeable
                                             </li>
                                             <li>
-                                                <i class="far fa-check-circle"/>
+                                                <i className="far fa-check-circle"/>
                                                 Right Choice
                                             </li>
                                         </ul>

@@ -2,12 +2,12 @@ import React from "react";
 import "./SelectorBtn.css";
 import { Link } from "react-router-dom"
 
-const SelectorBtn = () =>
+const SelectorBtn = (props) =>
 {
     return (
-        <div>
-            {/*<Link className="area-selector" />*/}
-        </div>
+        <a className="area-selector" onClick={ props.clickFunction }>
+            <img className="area-img" src={ props.image } />
+        </a>
     )
 }
 
