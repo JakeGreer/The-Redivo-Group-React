@@ -16,10 +16,37 @@
     color: white;
 }
 
+.bottom {
+    box-shadow: 5px 10px 2px #888888;
+}
+
 .bottom ul li a:hover {
     background-color: black !important;
 }
 
+@media only screen and (max-width: 414px) {
+    .logo {
+        position: relative;
+        padding-left: 33% ;
+        padding-bottom: 8px;
+    }
+
+    .phone {
+        font-size: 16px;
+        padding-bottom: 8px;
+        padding-left: 35%;
+    }
+
+    .address-header {
+        padding-top: 0 ;
+        font-size: 14px ;
+    }
+
+    .top {
+        background-color: #ececec ;
+        color: #000000 ;
+    }
+}
 
 @media only screen and (min-width: 576px) {
     .address-header {
@@ -54,11 +81,11 @@
 @media only screen and (min-width: 768px) {
     .address-header {
         padding-top: 0 ;
-        font-size: 14px ;
+        font-size: 13px ;
     }
 
     .phone {
-        font-size: 14px;
+        font-size: 10px;
     }
 
     .logo-img {
@@ -69,7 +96,7 @@
 
     .logo {
         position: relative;
-        padding-left: -10% ;
+        left: 40%;
     }
 
     .top {
@@ -104,9 +131,39 @@
     .top {
         background-color: #ececec;
         color: #000000;
-        padding: 13px;
+        padding: 12px;
     }
 }
+
+@media only screen and (min-width: 1024px) {
+    .address-header {
+        padding-left: 18%;
+        font-size: 16px;
+    }
+
+    .phone {
+        font-size: 16px;
+    }
+
+    .logo-img {
+        position: relative;
+        z-index: 99;
+        display: inline-block;
+    }
+
+    .logo {
+        position: absolute;
+        top: 0;
+        left: 8% ;
+    }
+
+    .top {
+        background-color: #ececec;
+        color: #000000;
+        padding: 10px;
+    }
+}
+
 
 @media only screen and (min-width: 1200px) {
     .logo-img {
@@ -122,11 +179,11 @@
     }
     .address-header {
         padding-left: 5% ;
-        font-size: 18px ;
+        font-size: 17px ;
     }
 
     .phone {
-        font-size: 18px ;
+        font-size: 17px ;
     }
 
     .top {
@@ -168,24 +225,7 @@
 }
 
 
-/*@media only screen and (min-width: 360px) {*/
-    /*.logo {*/
-        /*position: relative;*/
-        /*padding-left: 30% ;*/
-        /*padding-bottom: 8px;*/
-    /*}*/
 
-    /*.phone {*/
-        /*font-size: 16px;*/
-        /*padding-bottom: 8px;*/
-        /*padding-left: 35%;*/
-    /*}*/
-
-    /*.address-header {*/
-        /*padding-top: 0 ;*/
-        /*font-size: 14px ;*/
-    /*}*/
-/*}*/
 
 
 
