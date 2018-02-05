@@ -5,7 +5,7 @@ import './HeaderSlide.css'
 const HeaderSlide = (props) => {
 
     return(
-        <div className='container'>
+        <div className=''>
             <Carousel 
                 carouselName='headerCarousel' 
                 images={true} 
