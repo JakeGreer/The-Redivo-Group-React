@@ -1,5 +1,6 @@
 import React from 'react'
 import './Discover.css'
+import { Link } from 'react-router-dom'
 
 const Discover = (props) => {
 
@@ -58,7 +59,7 @@ const Discover = (props) => {
                                         </ul>
                                     </div>
                                 </div>
-                                <button href="#" class="btn know-btn">KNOW MORE</button>
+                                <Link to='/contact' className="btn know-btn">KNOW MORE</Link>
                             </div>
                         </div>
                         <div className='col-md-4 profile-image-desktop'>
