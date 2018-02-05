@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link  } from 'react-router-dom'
-import Logo from './Small-Logo.png'
 import "./Header.css"
 
 const Header = () => {
@@ -10,7 +9,7 @@ const Header = () => {
             <div className="row">
                 <div className="top col-md-12 col-sm-12 col-xs-12">
                     <div className="logo">
-                        <a id="logo"><img src={Logo} className="logo-img img-responsive" /></a>
+                        <a id="logo"><img src='../public/img/Small-Logo.png' className="logo-img img-responsive" /></a>
                     </div>
                     <div className="container">
                         <div className="row">
