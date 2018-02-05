@@ -29,3 +29,12 @@
     max-height: 150px;
     padding: 0px 35px 0px 35px !important;
 }
+
+@media screen and (max-width: 767px)  {
+    .slick-slide img {
+        text-align: center !important;
+        margin: 0 auto !important;
+        max-height: 200px;
+        padding: 0px 10px 0px 10px !important;
+    }
+}

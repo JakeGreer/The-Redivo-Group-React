@@ -32,7 +32,7 @@ const Accolades = () => {
                 } 
             }, 
             { 
-                breakpoint: 600, 
+                breakpoint: 767, 
                 settings: { 
                     initailSlide: 2,
                     slidesToShow: 2,
