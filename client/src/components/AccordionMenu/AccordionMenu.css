@@ -1,9 +1,9 @@
-.accordion-div .card-header, h5{
+.accordion-div .card-header{
     background-color: #0eae9b;
 }
 
-.accordian-list{
-
+.accordion-div .card-header:hover{
+    background-color: #0c8879 !important;
 }
 
 .accordian-list li .list-icon{
@@ -18,7 +18,6 @@
     left:15px; /* adjust it to your custom font needings */
 }
 
-
 .accordian-list li{
     margin-bottom: 5px !important;
     font-size: 10pt;
@@ -29,7 +28,6 @@
     border-bottom-left-radius: 30px !important;
     border-bottom-right-radius: 30px !important;
     margin-bottom: 5px !important;
-
 }
 
 .collapse.show {
@@ -50,7 +48,6 @@
 .accordion-div ul{
     list-style: none !important;
 }
-
 
 .accordion-text-content-header{
     font-size: 12pt !important;
