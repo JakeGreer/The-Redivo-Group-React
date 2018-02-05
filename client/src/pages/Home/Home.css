@@ -23,12 +23,22 @@
 
 .testimonial-container{
     padding-top: 30px;
+    padding-bottom: 50px;
     background: #fff;
-    height: 800px;
+    height:100% !important;
     width: 100% !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center !important;
+}
+
+.accolades-container{
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    background: #fff;
+    height:100% !important;
+    width: 100% !important;
+
 }
 
 @media screen and (max-width: 767px)  {

@@ -1,6 +1,8 @@
 import React from "react";
+import Accolades from '../../components/Accolades'
 import Carousel from '../../components/Carousel'
 import Discover from '../../components/Discover'
+import HeaderSlide from '../../components/HeaderSlide'
 import Testimonial from '../../components/Testimonial'
 import './Home.css'
 
@@ -10,7 +12,7 @@ const Home = (props) => {
         <div>
             <div className='carousel-container'>
                 <div className='carousel-div'>
-                    <Carousel carouselName='headerCarousel' images={true} slides={['slide1a.jpg','slide2a.jpg','slide3a.jpg']} />
+                    <HeaderSlide />
                 </div>
             </div>
             <div className='discover-container'>
@@ -18,6 +20,9 @@ const Home = (props) => {
             </div>
             <div className='testimonial-container' style={{backgroundImage:`url(${'../public/img/testimonial-bg.jpg'})`}}>
                 <Testimonial />
+            </div>
+            <div className='accolades-container'>
+                <Accolades />
             </div>
         </div>
     )

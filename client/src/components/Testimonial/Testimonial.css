@@ -31,6 +31,12 @@
     text-align: center;
 }
 
+.testimony-div .col-md-6{
+    text-align: center;
+    margin-bottom: 200px !important;
+}
+
+
 .testimony-title{
     color: #fff;
     font-size: 20px;
@@ -40,7 +46,6 @@
 }
 
 ul .ratings{
-    margin: 0 0 20px;
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 20px;
@@ -87,11 +92,19 @@ ul .ratings{
 
 .carousel .control-dots {
     position: relative !important;
-    margin: 0px 0 !important;
+    margin: 0px 0 15px 0 !important;
     text-align: center;
     width: 100%;
 }
 
 .carousel .carousel-status {
     display: none !important;
+}
+
+@media screen and (max-width: 767px)  {
+    .testimonial-h-container-b{
+        text-align: left;
+        border-left: 2px solid #ffffff !important;
+        border-right: none !important;
+    }
 }

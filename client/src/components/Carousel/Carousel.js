@@ -9,7 +9,7 @@ const Carousel = (props) => {
                 <ol className="carousel-indicators">
                     {props.slides.map(function(slides,i){
                             return (
-                                <li data-target={`#${props.carouselName}`} data-slide-to={i} className={i <= 0 ? "active" : ""}></li>
+                                <li data-target={`#${props.carouselName}`} key={i} data-slide-to={i} className={i <= 0 ? "active" : ""}></li>
                             )
                         })
                     }
@@ -18,13 +18,13 @@ const Carousel = (props) => {
                         {props.slides.map(function(slide,i){
                             return(
                                 <div className={i <= 0 ? "carousel-item active" : "carousel-item"} key={`${slide}-${i}` }>
-                                    <ImgSlide id={`id-${slide}-${i}` } image={slide}  />
+                                    <ImgSlide slideType={`${props.carouselName}-slide-div`}id={`id-${slide.split('.')[0]}-${i}` } image={slide}  />
                                 </div>
                             )
                         })
                     }                        
                 </div>
-                <a className="carousel-control-prev" onClick={`#${props.carouselName}`} role="button" data-slide="prev">
+                <a className="carousel-control-prev" href={`#${props.carouselName}`} role="button" data-slide="prev">
                     <i class="fas fa-angle-left"></i>
                 </a>
                 <a className="carousel-control-next" href={`#${props.carouselName}`}  role="button" data-slide="next" onClick={function(){
