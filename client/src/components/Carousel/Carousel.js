@@ -18,7 +18,7 @@ const Carousel = (props) => {
                         {props.slides.map(function(slide,i){
                             return(
                                 <div className={i <= 0 ? "carousel-item active" : "carousel-item"} key={`${slide}-${i}` }>
-                                    <ImgSlide id={`id-${slide}-${i}` } image={slide}  />
+                                    <ImgSlide slideType={`${props.carouselName}-slide-div`}id={`id-${slide.split('.')[0]}-${i}` } image={slide}  />
                                 </div>
                             )
                         })

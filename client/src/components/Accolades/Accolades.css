@@ -1,0 +1,31 @@
+.accolade-slide-div{
+    margin: 0 2px 0 2px !important;
+}
+
+.carousel .slide img {
+    vertical-align: top;
+    border: 0;
+}
+
+
+.slide-holder {
+    border-radius: 10px;
+}
+
+.accolades-slide{
+    background-color: #f0f0f0 !important;
+    
+    border-radius: 10px;
+}
+
+.slick-dots li button:before {
+    font-size: 18px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #0eae9b;
+}
+.slick-slide img {
+    max-height: 150px;
+    padding: 0px 35px 0px 35px !important;
+}

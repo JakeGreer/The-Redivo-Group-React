@@ -2,10 +2,8 @@ import React from 'react';
 import './AccordionMenu.css'
 
 const AccordionMenu = (props) => {
-    console.log('accordion props', props)
-    
+   
     const content = props.content
-    console.log('accordion props', content)
     return (
         <div className='accordion-div' id='accordion'>
             {content.map(function(content, i){
@@ -26,7 +24,7 @@ const AccordionMenu = (props) => {
                                 <ul className='accordian-list list-left'>
                                     {content.leftList.map(function(item,i){
                                         return(
-                                            <li className='accordian-list-item'>
+                                            <li key={`listL-${i}`} className='accordian-list-item'>
                                                 <i className={`${item.icon} list-icon`}/>
                                                 <p>{item.text}</p>
                                             </li>
@@ -40,7 +38,7 @@ const AccordionMenu = (props) => {
                             <ul className='accordian-list list-right'>
                                     {content.rightList ? content.rightList.map(function(item,i){
                                         return(
-                                            <li className='accordian-list-item'>
+                                            <li key={`listR-${i}`} className='accordian-list-item'>
                                                 <i className={`${item.icon} list-icon`}/>
                                                 <p>{item.text}</p>
                                             </li>
