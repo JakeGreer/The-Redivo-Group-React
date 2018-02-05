@@ -7,11 +7,7 @@ const Jumbotron = (props) => {
 
     return(
     <header>
-        <div className="jumbotron text-center" 
-            style={{
-                backgroundImage: 'url(' + imageUrl + ')'
-            }}
-        >
+        <div className="jumbotron text-center" style={{backgroundImage: 'url(' + imageUrl + ')'}}>
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
