@@ -21,9 +21,9 @@ app.use(morgan('dev')); // log every request to the console
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Serve up static assets (usually on heroku)
+
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+    app.use(express.static("client/build"));
 }
 
 // Routes
@@ -34,7 +34,7 @@ if (process.env.NODE_ENV === "production") {
 // Send every request to the React app
 // Define any API routes before this runs
 app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+    res.sendFile(path.resolve(__dirname + '/client/build/index.html'));
 });
 
 app.listen(PORT, function() {

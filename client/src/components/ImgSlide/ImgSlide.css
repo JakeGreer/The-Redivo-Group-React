@@ -1,0 +1,7 @@
+.headerCarousel-slide-div{
+    height: 500px !important;
+    width: 100% !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center !important;
+}

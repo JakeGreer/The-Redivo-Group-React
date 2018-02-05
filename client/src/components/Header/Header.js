@@ -1,5 +1,6 @@
-import React from "react"
-import Logo from "./Small-Logo.png"
+import React, { Component } from 'react'
+import { Link  } from 'react-router-dom'
+import Logo from './Small-Logo.png'
 import "./Header.css"
 
 const Header = () => {
@@ -27,16 +28,16 @@ const Header = () => {
                 <div className="bottom col-md-12">
                     <ul class="nav justify-content-center">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Active</a>
+                            <Link class="nav-link " to="/">Home</Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <Link class="nav-link" to="/properties">Properties</Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <Link class="nav-link" to="/blog">Blog</Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Disabled</a>
+                            <Link class="nav-link" to="/contact">Contact</Link>
                         </li>
                     </ul>
                 </div>

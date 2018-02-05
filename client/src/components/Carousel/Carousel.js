@@ -1,41 +1,41 @@
 import React from "react";
+import ImgSlide from '../ImgSlide'
 import './Carousel.css';
 
-const Carousel = (props) => (
-        <div className='carousel-div'>
-            <div id="carouselExampleIndicators" className="carousel slide" interval="5000" data-ride="carousel">
+const Carousel = (props) => {
+
+    return(
+            <div id={props.carouselName} className="carousel slide" interval="5000" data-ride="carousel">
                 <ol className="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    {props.slides.map(function(slides,i){
+                            return (
+                                <li data-target={`#${props.carouselName}`} key={i} data-slide-to={i} className={i <= 0 ? "active" : ""}></li>
+                            )
+                        })
+                    }
                 </ol>
-
                 <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img className="slide-image" src="../public/img/slide1a.jpg" alt="slide1 pic" />                        
-                    </div>
-
-                    <div className="carousel-item">
-                        <img className="slide-image" src="../public/img/slide2a.jpg" alt="slide2 pic" />
-                    </div>
-
-                    <div className="carousel-item">
-                        <img className="slide-image" src="../public/img/slide3a.jpg" alt="slide3 pic" />
-                    </div>
-
+                        {props.slides.map(function(slide,i){
+                            return(
+                                <div className={i <= 0 ? "carousel-item active" : "carousel-item"} key={`${slide}-${i}` }>
+                                    <ImgSlide slideType={`${props.carouselName}-slide-div`}id={`id-${slide.split('.')[0]}-${i}` } image={slide}  />
+                                </div>
+                            )
+                        })
+                    }                        
                 </div>
-                <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="sr-only">Previous</span>
+                <a className="carousel-control-prev" href={`#${props.carouselName}`} role="button" data-slide="prev">
+                    <i class="fas fa-angle-left"></i>
                 </a>
-                <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="sr-only">Next</span>
+                <a className="carousel-control-next" href={`#${props.carouselName}`}  role="button" data-slide="next" onClick={function(){
+                    console.log('clicked')
+                }}>
+                    <i class="fas fa-angle-right"></i>  
                 </a>
             </div>
-        </div>
+    )
 
-)
+}
 
 
 export default Carousel;

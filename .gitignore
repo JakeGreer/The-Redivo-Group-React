@@ -2,8 +2,8 @@
 /node_modules
 /client/node_modules
 
-# production
-/build
+#testing
+/coverage
 
 # misc
 .DS_Store

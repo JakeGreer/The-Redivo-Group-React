@@ -1,0 +1,110 @@
+.testimonial-h-container-a{
+    margin: 0 0 0 0;
+    border-left: 2px solid #ffffff !important;
+    margin: 0px 0px 20px 0px !important;
+    padding: 10px 15px 10px 15px;
+}
+
+.testimonial-h-container-b{
+    text-align: right;
+    border-right: 2px solid #ffffff !important;
+    margin: 0px 0px 20px 0px !important;
+    padding: 10px 15px 10px 15px;
+}
+  
+.testimonial-h-a, .testimonial-h-b{
+    line-height: 38px;
+    margin: 0px 0px 0px 0px !important;
+    color: #0eae9b;
+    font-weight: bold;
+}
+
+.testimonial-h-a{
+    margin: 0px 0px 0px 0px !important;
+}
+
+.testimonial-h-b{
+    margin: 0px 0px 0px 0px !important;
+}
+
+.testimony-div{
+    text-align: center;
+}
+
+.testimony-div .col-md-6{
+    text-align: center;
+    margin-bottom: 200px !important;
+}
+
+
+.testimony-title{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+
+ul .ratings{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    list-style: none;
+}
+
+.testimony-div .ratings li {
+    display: inline-block !important;
+    color: #0eae9b;
+    font-size: 18px;
+}
+
+.testimony-div p{
+    font-weight: normal !important;
+    font-size: 12pt !important;
+    font-style: italic !important;
+    color: white;
+}
+
+.testimony-div .client-div h3{
+    font-size: 14pt !important;
+    font-weight: bold;
+    color: white;
+}
+
+
+.testimony-div .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+.carousel .slide {
+    min-width: 100%;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    background-color: transparent !important;
+}
+
+.carousel .control-dots {
+    position: relative !important;
+    margin: 0px 0 15px 0 !important;
+    text-align: center;
+    width: 100%;
+}
+
+.carousel .carousel-status {
+    display: none !important;
+}
+
+@media screen and (max-width: 767px)  {
+    .testimonial-h-container-b{
+        text-align: left;
+        border-left: 2px solid #ffffff !important;
+        border-right: none !important;
+    }
+}

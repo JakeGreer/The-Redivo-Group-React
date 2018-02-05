@@ -1,0 +1,59 @@
+.accordion-div .card-header{
+    background-color: #0eae9b;
+}
+
+.accordion-div .card-header:hover{
+    background-color: #0c8879 !important;
+}
+
+.accordian-list li .list-icon{
+    color: #0eae9b !important;    
+}
+
+.accordian-list p {
+    padding-left:10px; /* adjust it to your custom font needings */
+    padding-right:10px;
+    position:relative;
+    margin-top: -20px !important;
+    left:15px; /* adjust it to your custom font needings */
+}
+
+.accordian-list li{
+    margin-bottom: 5px !important;
+    font-size: 10pt;
+}
+
+.accordion-div .card{
+    border: none !important;
+    border-bottom-left-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+    margin-bottom: 5px !important;
+}
+
+.collapse.show {
+    background-color: #FFF !important;
+    border-bottom-left-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+}
+.accordion-div .card-body{
+
+}
+
+.header-div{
+    color: #FFF !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+}
+
+.accordion-div ul{
+    list-style: none !important;
+}
+
+.accordion-text-content-header{
+    font-size: 12pt !important;
+    color: #0eae9b;
+    font-weight: bold !important;
+    margin-bottom: 15px !important;
+}
+
+
