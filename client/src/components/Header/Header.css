@@ -16,10 +16,6 @@
     color: white;
 }
 
-.bottom {
-    box-shadow: 5px 10px 2px #888888;
-}
-
 .bottom ul li a:hover {
     background-color: black !important;
 }
