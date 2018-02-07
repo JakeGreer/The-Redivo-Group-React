@@ -7,6 +7,7 @@ import PropertyDirections from "../../components/PropertyDirections"
 import Card from "../../components/Card"
 import PropertySearchField from "../../components/PropertySearchField"
 import PropertyCustomSearch from "../../components/PropertyCustomSearch"
+import PropCardSection from "../../components/PropCardSection"
 import "./Properties.css";
 
 class Properties extends Component {
@@ -14,7 +15,11 @@ class Properties extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            propType: true,
+            initSelector: true,
+            buy: false,
+            sell: false,
+            rent: false,
+            propType: false,
             displayDetails: false,
             cities: false,
             cards: false,
@@ -25,6 +30,10 @@ class Properties extends Component {
 
 
     renderTypes = () => {
+        if(this.state.initSelector) {
+            return
+        }
+
         if( this.state.propType ) {
             return <PropTypeSection clickFunction={ this.handlePropType }/>
         }
@@ -39,7 +48,9 @@ class Properties extends Component {
         }
 
         if( this.state.cards) {
-            return (<div>
+            return (
+                <div>
+                    {/*<PropCardSection array={}/>*/}
                     <PropertyCustomSearch/>
                     <PropertySearchField/>
                 </div>)
@@ -63,10 +74,22 @@ class Properties extends Component {
         this.setState({ cities: true })
     }
 
+    handleInitSelector = (e) => {
+        let type = e.target.id;
+        this.setState({ initSelector: true })
+
+        if(type == "Buy")
+            this.setState({ buy: true })
+
+        if(type == "Rent")
+            this.setState({ rent: true })
+
+        if(type == "Sell")
+            this.setState({ sell: true })
+    }
+
     handleDetails = (e) => {
         e.preventDefault()
-
-
     }
 
     render() {
@@ -76,15 +99,7 @@ class Properties extends Component {
                 <Container>
                     <PropertyDirections/>
                     { this.renderTypes() }
-                    <Card
-                        src = "../public/img/house1.jpg"
-                        title = "Pool & Spa"
-                        price = "689,000" 
-                        address = "8950 Highland Crest Dallas, TX 75208"
-                        sqrft = "3,100"
-                        bedrooms = "4"
-                        baths = "2.5"
-                    />
+
                 </Container>
             </div>
         )
