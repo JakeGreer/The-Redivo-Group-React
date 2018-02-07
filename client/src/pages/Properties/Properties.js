@@ -16,14 +16,12 @@ class Properties extends Component {
         super(props)
         this.state = {
             initSelector: true,
-            buy: false,
-            sell: false,
-            rent: false,
             propType: false,
             displayDetails: false,
             cities: false,
             cards: false,
-            queryString: ""
+            queryString: "",
+            typeString: ""
         }
     }
 
@@ -59,31 +57,21 @@ class Properties extends Component {
         let city = e.target.id
         let query = this.state.queryString
         query += city
-        this.setState({ cities: false })
-        this.setState({ cards: true })
-        this.setState({ queryString: query })
+        this.setState({ cities: false, cards: true, queryString: query })
     }
 
 
     handlePropType = (e) => {
         let type = e.target.id;
-        this.setState({ queryString: type })
-        this.setState({ propType: false })
-        this.setState({ cities: true })
+        let query = this.state.typeString
+
+        query += " " + type
+        this.setState({ queryString: query, propType: false, cities: true })
     }
 
     handleInitSelector = (e) => {
         let type = e.target.id;
-        this.setState({ initSelector: true })
-
-        if(type == "Buy")
-            this.setState({ buy: true })
-
-        if(type == "Rent")
-            this.setState({ rent: true })
-
-        if(type == "Sell")
-            this.setState({ sell: true })
+        this.setState({ initSelector: false, propType: true, typeString: type })
     }
 
     handleDetails = (e) => {
@@ -97,7 +85,6 @@ class Properties extends Component {
                 <Container>
                     <PropertyDirections/>
                     { this.renderTypes() }
-
                 </Container>
             </div>
         )

@@ -20,3 +20,4 @@ const InitSelector = ( props ) =>  {
     )
 }
 
+export default InitSelector

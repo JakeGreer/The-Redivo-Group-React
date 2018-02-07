@@ -1,13 +1,19 @@
 import React from "react"
-import "./PropertySearchField"
+import "./PropertySearchField.css"
 
 const PropertySearchField = ( props ) => {
     return (
-        <div className="row text-center">
-            <form action="#">
-                <input type="text" name="username" className = "name" placeholder = "Enter an address, neighborhood, city or ZIP code"/>
-                <button href="#" className="btn btn-xl btn-light">Send</button>
-            </form>
+        <div className="row">
+            <div className="col-md-2"> </div>
+            <div className="col-md-8">
+                <form className="form-wrapper">
+                    <input type="text" name="data" id="search-field" value={ props.data }
+                           placeholder = "Enter an address, neighborhood, city or ZIP code"
+                           onChange={props.handleChange} />
+                    <button type="submit" id="form-btn" className="btn btn-lg">Submit</button>
+                </form>
+            </div>
+            <div className="col-md-2"> </div>
         </div>
     )
 }
