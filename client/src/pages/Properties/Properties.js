@@ -4,6 +4,7 @@ import { Container } from "../../components/Grid"
 import PropTypeSection from "../../components/PropTypeSection"
 import CityTypeSection from "../../components/CityTypeSection"
 import PropertyDirections from "../../components/PropertyDirections"
+import Card from "../../components/Card"
 import PropertySearchField from "../../components/PropertySearchField"
 import PropertyCustomSearch from "../../components/PropertyCustomSearch"
 import "./Properties.css";
@@ -14,11 +15,14 @@ class Properties extends Component {
         super(props)
         this.state = {
             propType: true,
+            displayDetails: false,
             cities: false,
             cards: false,
             queryString: ""
         }
     }
+
+
 
     renderTypes = () => {
         if( this.state.propType ) {
@@ -59,6 +63,12 @@ class Properties extends Component {
         this.setState({ cities: true })
     }
 
+    handleDetails = (e) => {
+        e.preventDefault()
+
+
+    }
+
     render() {
         return (
             <div>
@@ -66,6 +76,15 @@ class Properties extends Component {
                 <Container>
                     <PropertyDirections/>
                     { this.renderTypes() }
+                    <Card
+                        src = "../public/img/house1.jpg"
+                        title = "Pool & Spa"
+                        price = "689,000" 
+                        address = "8950 Highland Crest Dallas, TX 75208"
+                        sqrft = "3,100"
+                        bedrooms = "4"
+                        baths = "2.5"
+                    />
                 </Container>
             </div>
         )
