@@ -2,8 +2,11 @@ import React, { Component } from 'react'
 import  Jumbotron from "../../components/Jumbotron"
 import { Container } from "../../components/Grid"
 import PropTypeSection from "../../components/PropTypeSection"
+import CityTypeSection from "../../components/CityTypeSection"
 import PropertyDirections from "../../components/PropertyDirections"
 import Card from "../../components/Card"
+import PropertySearchField from "../../components/PropertySearchField"
+import PropertyCustomSearch from "../../components/PropertyCustomSearch"
 import "./Properties.css";
 
 class Properties extends Component {
@@ -12,7 +15,10 @@ class Properties extends Component {
         super(props)
         this.state = {
             propType: true,
-            displayDetails: false
+            displayDetails: false,
+            cities: false,
+            cards: false,
+            queryString: ""
         }
     }
 
@@ -20,12 +26,41 @@ class Properties extends Component {
 
     renderTypes = () => {
         if( this.state.propType ) {
-            return <PropTypeSection/>
+            return <PropTypeSection clickFunction={ this.handlePropType }/>
+        }
+        
+        if( this.state.cities ) {
+            return (
+                <div>
+                    <CityTypeSection clickFunction={ this.renderCities }/>
+                    <PropertyCustomSearch/>
+                    <PropertySearchField/>
+                </div>)
+        }
+
+        if( this.state.cards) {
+            return (<div>
+                    <PropertyCustomSearch/>
+                    <PropertySearchField/>
+                </div>)
         }
     }
 
-    handlePropType = (text, e) => {
+    renderCities = (e) => {
+        let city = e.target.id
+        let query = this.state.queryString
+        query += city
+        this.setState({ cities: false })
+        this.setState({ cards: true })
+        this.setState({ queryString: query })
+    }
+
+
+    handlePropType = (e) => {
+        let type = e.target.id;
+        this.setState({ queryString: type })
         this.setState({ propType: false })
+        this.setState({ cities: true })
     }
 
     handleDetails = (e) => {
