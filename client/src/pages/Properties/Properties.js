@@ -4,9 +4,9 @@ import { Container } from "../../components/Grid"
 import PropTypeSection from "../../components/PropTypeSection"
 import CityTypeSection from "../../components/CityTypeSection"
 import PropertyDirections from "../../components/PropertyDirections"
-import Card from "../../components/Card"
 import PropertySearchField from "../../components/PropertySearchField"
 import PropertyCustomSearch from "../../components/PropertyCustomSearch"
+import InitSelector from "../../components/InitSelector"
 import PropCardSection from "../../components/PropCardSection"
 import "./Properties.css";
 
@@ -27,11 +27,9 @@ class Properties extends Component {
         }
     }
 
-
-
     renderTypes = () => {
         if(this.state.initSelector) {
-            return
+            return <InitSelector clickFunction={ this.handleInitSelector }/>
         }
 
         if( this.state.propType ) {
