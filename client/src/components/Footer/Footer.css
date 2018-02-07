@@ -1,0 +1,19 @@
+#footer {
+    position: relative;
+    width: 100% !important;
+    background-color: #202020 !important;
+    color: white;
+    text-align: center;
+    height: 100% !important;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+.footer .top .text .header {
+    padding: 5px 15px;
+    border-left: 2px solid #ccc;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    background-color: #202020 !important;
+}
