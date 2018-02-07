@@ -7,13 +7,76 @@
     height: 100% !important;
     margin-top: 5%;
     overflow: hidden;
+    padding: 15px;
 }
 
-.footer .top .text .header {
+.logo {
+    padding-top: 7px;
+}
+
+#footer .top-footer .text .header {
     padding: 5px 15px;
     border-left: 2px solid #ccc;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
     background-color: #202020 !important;
+}
+
+#footer .quick-links, #footer .foot-address {
+    margin: 0;
+    list-style: none;
+}
+#footer .quick-links li, #footer .foot-address li {
+    margin-bottom: 10px;
+}
+#footer .foot-address li {
+    position: relative;
+    padding-left: 30px;
+}
+#footer .foot-address li i.fa{
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+#footer .quick-links a {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.fa {
+    margin-right: 3px;
+}
+
+@media only screen and (max-width: 360px) {
+    .logo {
+        padding-right: 150px;
+        margin-right: 10px !important;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .logo {
+        padding-right: 150px;
+        margin-right: 10px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .logo {
+        display: none;
+    }
+
+    #star {
+        display: none;
+    }
+}
+@media only screen and (min-width: 770px) {
+    .logo {
+        display: block;
+    }
+
+    #star {
+        display: block;
+    }
 }

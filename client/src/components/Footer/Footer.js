@@ -1,24 +1,25 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import "./Footer.css"
 
 const Footer = () => {
     return (
         <div id="footer">
-            <div className="top">
+            <div className="top-footer">
             <div className="container">
                 <div className="row">
                     <div className="col-md-3 col-sm-6 col-xs-12">
-                        <a href="#" class="logo"><img src="../public/img/Clear-Logo.png" alt="" /></a>
+                        <Link to="#" class="logo"><img src="../public/img/Clear-Logo.png" alt="" /></Link>
                     </div>
                     <div className="col-md-3 col-sm-6 col-xs-12">
                         <div className="text">
                             <div className="header">QUICK LINK</div>
                             <ul className="quick-links">
-                                <li><a href="#">Agent</a></li>
-                                <li><a href="properties.html">Properties</a></li>
-                                <li><a href="#">Features</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><Link to="#">Agent</Link></li>
+                                <li><Link to="properties.html">Properties</Link></li>
+                                <li><Link to="#">Features</Link></li>
+                                <li><Link to="blog.html">Blog</Link></li>
+                                <li><Link to="contact.html">Contact</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -28,18 +29,18 @@ const Footer = () => {
                             <ul className="foot-address">
                                 <li>
                                     <i className="fa fa-globe"></i>
-                                    The Redivo Group, Inc.<br />
+                                     The Redivo Group, Inc.<br />
                                     209 Avenida Del Mar<br />
                                     Suite 104 <br />
                                     San Clemente, CA 92673
                                 </li>
                                 <li>
                                     <i className="fa fa-phone"></i>
-                                    p. 949-838-5449
+                                     p. 949-838-5449
                                 </li>
                                 <li>
                                     <i className="fa fa-envelope"></i>
-                                    hello@realestatepro.com
+                                     hello@realestatepro.com
                                 </li>
                             </ul>
                         </div>
@@ -50,6 +51,11 @@ const Footer = () => {
                 </div>
             </div>
             </div>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    Copyright The Redivo Group 2018
+                </li>
+            </ul>
         </div>
     )
 }
