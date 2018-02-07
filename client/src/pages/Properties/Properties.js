@@ -4,9 +4,10 @@ import { Container } from "../../components/Grid"
 import PropTypeSection from "../../components/PropTypeSection"
 import CityTypeSection from "../../components/CityTypeSection"
 import PropertyDirections from "../../components/PropertyDirections"
-import Card from "../../components/Card"
 import PropertySearchField from "../../components/PropertySearchField"
 import PropertyCustomSearch from "../../components/PropertyCustomSearch"
+import InitSelector from "../../components/InitSelector"
+import PropCardSection from "../../components/PropCardSection"
 import "./Properties.css";
 
 class Properties extends Component {
@@ -14,17 +15,21 @@ class Properties extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            propType: true,
+            initSelector: true,
+            propType: false,
             displayDetails: false,
             cities: false,
             cards: false,
-            queryString: ""
+            queryString: "",
+            typeString: ""
         }
     }
 
-
-
     renderTypes = () => {
+        if(this.state.initSelector) {
+            return <InitSelector clickFunction={ this.handleInitSelector }/>
+        }
+
         if( this.state.propType ) {
             return <PropTypeSection clickFunction={ this.handlePropType }/>
         }
@@ -39,7 +44,9 @@ class Properties extends Component {
         }
 
         if( this.state.cards) {
-            return (<div>
+            return (
+                <div>
+                    {/*<PropCardSection array={}/>*/}
                     <PropertyCustomSearch/>
                     <PropertySearchField/>
                 </div>)
@@ -50,23 +57,25 @@ class Properties extends Component {
         let city = e.target.id
         let query = this.state.queryString
         query += city
-        this.setState({ cities: false })
-        this.setState({ cards: true })
-        this.setState({ queryString: query })
+        this.setState({ cities: false, cards: true, queryString: query })
     }
 
 
     handlePropType = (e) => {
         let type = e.target.id;
-        this.setState({ queryString: type })
-        this.setState({ propType: false })
-        this.setState({ cities: true })
+        let query = this.state.typeString
+
+        query += " " + type
+        this.setState({ queryString: query, propType: false, cities: true })
+    }
+
+    handleInitSelector = (e) => {
+        let type = e.target.id;
+        this.setState({ initSelector: false, propType: true, typeString: type })
     }
 
     handleDetails = (e) => {
         e.preventDefault()
-
-
     }
 
     render() {
@@ -76,15 +85,6 @@ class Properties extends Component {
                 <Container>
                     <PropertyDirections/>
                     { this.renderTypes() }
-                    <Card
-                        src = "../public/img/house1.jpg"
-                        title = "Pool & Spa"
-                        price = "689,000" 
-                        address = "8950 Highland Crest Dallas, TX 75208"
-                        sqrft = "3,100"
-                        bedrooms = "4"
-                        baths = "2.5"
-                    />
                 </Container>
             </div>
         )
