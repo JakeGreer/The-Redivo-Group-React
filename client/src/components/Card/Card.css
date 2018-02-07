@@ -1,0 +1,90 @@
+.card-price {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: normal;
+    background-color: rgba(00,0,0,0.5);
+}
+
+.content {
+    padding: 17px 10px 9px;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card-address {
+    border-bottom: 1px solid #d6d5d5;
+    margin-bottom: 15px;
+    color: #666;
+    padding: 0 0 10px;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+.characteristics ul li:first-child {
+    text-align: left;
+}
+
+.characteristics ul li {
+    float: left;
+    width: 33%;
+    font-size: 13px;
+    line-height: 13px;
+    color: #666;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.characteristics ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin-left: 0;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0 0 10px 25px;
+}
+
+.property-link {
+    padding: 15px;
+    font-size: 18px;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #0eae9b;
+    border: none;
+}
+
+.property-link:hover {
+    background-color: #0eae9b;
+}
+
+.fa-map-marker-alt {
+    margin-right: 5px;
+}
+
+.fa-arrows-alt {
+    margin-right: 5px;
+}
+
+.fa-bed {
+    margin-right: 5px;
+}
+
+.fa-bath {
+    margin-right: 5px;
+}
