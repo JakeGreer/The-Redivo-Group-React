@@ -17,7 +17,7 @@ const Card = (props) => {
                             <li className="card-baths"><i class="fas fa-bath"></i>{props.baths + " Baths"}</li>
                         </ul>
                     </div>
-                    <a href="#" className="btn btn-primary text-center property-link" onClick={props.handleDetails}>VIEW DETAILS</a>
+                    <a href="#" className="btn btn-primary text-center property-link" onClick={props.handleDetails}>View Details</a>
                 </div>
             </div>
         )
