@@ -75,8 +75,9 @@
 
 /* TABLETS PORTRAIT */
 @media only screen and (min-width: 768px) {
-    .address-header {
-        padding-top: 0 ;
+    .address-header strong{
+        padding-top: 0;
+        margin-left: 85px !important;
         font-size: 13px ;
     }
 
@@ -91,13 +92,14 @@
     }
 
     .logo {
-        position: relative;
-        left: 40%;
+        position: absolute;
+        top: 0;
     }
 
     .top {
         background-color: #ececec ;
         color: #000000 ;
+        padding: 13px;
     }
 
 }
@@ -156,7 +158,7 @@
     .top {
         background-color: #ececec;
         color: #000000;
-        padding: 10px;
+        padding: 13px;
     }
 }
 
