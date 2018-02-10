@@ -28,7 +28,7 @@
     background-color: #0eae9b;
 }
 
-.fa-angle-right, .fa-angle-left{
+.carousel-angle-left, .carousel-angle-right{
     border-radius: 100% !important;
     width: 35px !important;
     height: 35px !important;
@@ -38,10 +38,10 @@
     color: #0eae9b;
 }
 
-.fa-angle-left{
+.carousel-angle-left{
     margin-right: 50% !important;
 }
-.fa-angle-right{
+.carousel-angle-right{
     margin-left: 50% !important;
 }
 
