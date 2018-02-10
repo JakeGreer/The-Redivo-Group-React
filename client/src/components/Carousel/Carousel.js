@@ -25,12 +25,12 @@ const Carousel = (props) => {
                     }                        
                 </div>
                 <a className="carousel-control-prev" href={`#${props.carouselName}`} role="button" data-slide="prev">
-                    <i class="fas fa-angle-left"></i>
+                    <i class="fas fa-angle-left carousel-angle-right"></i>
                 </a>
                 <a className="carousel-control-next" href={`#${props.carouselName}`}  role="button" data-slide="next" onClick={function(){
                     console.log('clicked')
                 }}>
-                    <i class="fas fa-angle-right"></i>  
+                    <i class="fas fa-angle-right carousel-angle-right"></i>  
                 </a>
             </div>
     )
