@@ -1,0 +1,18 @@
+.contact-li {
+    list-style: none !important;
+    color: #595959;
+    font-weight: bold !important;
+    margin: 0px 0px 20px 0px !important;
+}
+
+.contact-li li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.contact-icon {
+    margin-right: 40px !important;
+}
+
+
+
