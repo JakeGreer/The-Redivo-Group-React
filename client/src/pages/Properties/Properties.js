@@ -8,6 +8,7 @@ import PropertySearchField from "../../components/PropertySearchField"
 import PropertyCustomSearch from "../../components/PropertyCustomSearch"
 import InitSelector from "../../components/InitSelector"
 import PropCardSection from "../../components/PropCardSection"
+import PropertyDetail from "../../components/PropertyDetail"
 import "./Properties.css";
 
 class Properties extends Component {
@@ -85,6 +86,17 @@ class Properties extends Component {
                 <Container>
                     <PropertyDirections/>
                     { this.renderTypes() }
+                    <PropertyDetail
+                        addressTop="8590 Highland Crest"
+                        addressBottom="Dallas, TX 75208"
+                        price="$689,000"
+                        propertyImages={["../public/img/house1.jpg","../public/img/house2.jpg", "../public/img/house3.jpg", "../public/img/house4.jpg", "../public/img/house5.jpg", "../public/img/house7.jpg", "../public/img/house8.jpg" ]}
+                        sqrft="3,100"
+                        bedrooms="4"
+                        baths="2.5"
+                        mls="120876543"
+
+                    />
                 </Container>
             </div>
         )
