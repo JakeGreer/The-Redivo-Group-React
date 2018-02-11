@@ -7,14 +7,14 @@ import "./PropertyDetail.css"
 
 // Tasks that need to get done on this page include the following
 
-    // CSS on the Property Details page is messed up. By that I mean the border lines are not showing for the tabs with the arrows next to them.. 
-    // Also the Header that Contains the words Property Details needs to be fixed. The styling they gave is not working. For instance the border is not there..
-    // If you reference the template site they have a cool border that merges with the tabs below I would like to achieve this look.
+// CSS on the Property Details page is messed up. By that I mean the border lines are not showing for the tabs with the arrows next to them..
+// Also the Header that Contains the words Property Details needs to be fixed. The styling they gave is not working. For instance the border is not there..
+// If you reference the template site they have a cool border that merges with the tabs below I would like to achieve this look.
 
-    //I added the html for the Details tab but none of the other ones and I have not yet put the corresponding CSS in either...
-    // Html needs to be added for the remaining three tabs but you can just copy paste from the details one I did and change the values and words because they all four follow the exact same format. I would just be wary of the different css classes.
-    
-    //Lastly all of the on click functions need to be written and passed in to handle the opening and closing of the tabs.
+//I added the html for the Details tab but none of the other ones and I have not yet put the corresponding CSS in either...
+// Html needs to be added for the remaining three tabs but you can just copy paste from the details one I did and change the values and words because they all four follow the exact same format. I would just be wary of the different css classes.
+
+//Lastly all of the on click functions need to be written and passed in to handle the opening and closing of the tabs.
 
 const PropertyDetail = (props) => {
     // This variable is used under the property details section as an inline styler
