@@ -1,0 +1,149 @@
+.blog-post-container{
+
+}
+
+.blog-box{
+
+    padding-top: 50px;
+    padding-bottom: 75px;
+    color: rgb(199, 199, 199);
+
+}
+
+.blog-header{
+    border-left: 2px solid rgb(26, 26, 26);;
+    padding: 5px 0px 0px 10px !important;
+    margin: 0px 0px 0px 0px !important;
+}
+
+.blog-header .headerA{
+    color: #0eae9b;
+}
+
+.blog-header .headerB{
+    color: rgb(43, 43, 43);
+    font-size: 18pt;
+}
+
+.blog-holder{
+    background-color: #0eae9b;
+    padding: 20px 30px 20px 30px;
+    color: rgb(199, 199, 199);
+    margin: 51px 0 5px 0;
+    box-shadow: 2px 2px 2px #000000c9;
+}
+
+
+.top-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+.blog-img-div{
+    margin-bottom: 10px;
+}
+
+.blog-img{
+
+}
+
+
+.blog-title{
+    
+}
+
+.blog-body-div{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.blog-header-div{
+    border-left: 3px solid rgb(255, 255, 255);
+    padding: 0px 0px 0px 10px;
+}
+
+.blog-header-div h3{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+.blog-date{
+    margin-top: -14px;
+    padding-bottom: 6px;
+    font-size: 14pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    color: rgba(0, 0, 0, 0.719);
+}
+
+.blog-text-div{
+    padding: 5px;
+    border-right: 2px solid rgb(240, 240, 240);
+}
+
+.blog-text{
+    font-size: 12pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 550;
+    color: rgb(0, 0, 0);
+    white-space: pre-wrap;
+
+}
+
+.btn-row{
+    padding-top: 25px;
+    border-top: 2px solid rgb(114, 114, 114);
+}
+
+.btn-left{
+    text-align: right;
+}
+
+.btn-mid{
+    text-align: center;
+}
+
+.btn-right{
+    text-align: left;
+}
+
+#pageNums{
+    color: #1d1d1d;
+    margin: 20px 0px 0px 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+@media screen and (max-width: 767px)  {
+
+    .blog-header .headerA{
+        color: rgb(0, 0, 0);
+    }
+    
+    .blog-header .headerB{
+        font-size: 18pt;
+    }
+
+    .blog-body-div{
+        border-bottom: none;
+    }
+
+    .btn-row{
+        padding-top: 0px;
+        border-top: none;
+    }
+    .btn-left{
+        text-align: right !important;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+        
+    .btn-right{
+        text-align: left !important;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+}
