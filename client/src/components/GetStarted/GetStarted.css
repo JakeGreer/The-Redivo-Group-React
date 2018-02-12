@@ -1,0 +1,182 @@
+#startsearch{
+
+}
+
+#startsearch:hover{
+   
+    
+}
+
+.start-btn{
+	background-color: #0eae9b !important;
+	font-family: 'Arial', 'sans-serrif' !important;
+	color: #FFFFFF;
+    font-size: 12pt;
+    min-width: 140px;
+}
+
+#rglogo{
+    max-height: 150px;
+}
+
+.start-h-container{
+    border-left: 2px solid #000000 !important;
+    margin: 0px 0px 20px 0px !important;
+    padding: 10px 0px 10px 35px;
+}
+
+.headerA{
+	font-weight: bold;
+	color: #000000;
+	margin: 0px 0px 0px 0px;
+	font-family: 'Arial', sans-serif !important;
+	display: block;
+}
+  
+.headerB{
+	font-weight: bold;
+	color:  #0eae9b;
+	margin: -10px 0px 0px 0px;
+	font-family: 'Arial', sans-serif !important;
+	display: block;
+}
+.start-buttons-div{
+    border-right: 2px solid #000000 !important;
+    margin: 0px auto !important;
+    padding: 30px 70px 40px 0px;
+}
+
+.start-row{
+    border-left: 2px solid #000000 !important;
+    border-right: 2px solid #000000 !important;
+    padding: 20px 0px 0px 0px;
+}
+
+@media screen and (max-width: 1025px)  {
+    .start-h-container{
+        display: block;
+        text-align: center !important;
+        margin: 20px 0 0 -40px !important;
+        text-align: left;
+        border-left: none !important;
+        padding: 0px !important; 
+    }
+    .start-h-container .headerA{
+        display: block;
+        font-size: 16pt !important;
+
+        padding: 0 !important; 
+    }
+    .start-h-container .headerB{
+        display: block;
+        font-size: 14pt  !important;
+        margin-top: 0px;
+        padding: 0 !important; 
+    }
+
+    .start-buttons-div{
+        display: block;
+        border-right: none !important;
+        margin: 5px 0px 0px 40px !important;
+        padding: 0 !important; 
+    }
+
+    .start-buttons-div button{
+        margin: 0 0 0 50px !important;
+    }
+    
+    .start-row{
+        border-left: 2px solid #000000 !important;
+        border-right: 2px solid #000000 !important;
+        padding: 10px 0px 20px 0px !important; 
+        padding-top: 10px !important; 
+    }
+    
+
+}
+@media screen and (max-width: 790px)  {
+    .start-h-container{
+
+        text-align: center !important;
+        border-left: none !important;
+        padding: 20px 0 0 0!important; 
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .start-h-container .headerA{
+        display: block;
+        font-size: 16pt !important;
+        margin-top: 30px !important;
+        padding: 0 !important; 
+    }
+    .start-h-container .headerB{
+        display: block;
+        font-size: 14pt  !important;
+        margin-top: 0px;
+        padding: 0 !important; 
+    }
+
+    .start-buttons-div{
+        display: inline;
+        border-right: none !important;
+        margin: 0px 500px 0px 0px !important;
+        padding: 0 !important; 
+    }
+
+    .start-buttons-div button{
+
+    }
+
+    .start-row{
+        border-left: 2px solid #000000 !important;
+        border-right: 2px solid #000000 !important;
+        margin: 0px 0px 0 0px !important;
+        padding: 10px 0 10px 0 !important;
+    }
+}
+
+
+
+@media screen and (max-width: 415px)  {
+    .start-h-container{
+
+        text-align: center !important;
+        border-left: none !important;
+        padding: 0px 0 0 0!important; 
+        margin: 10px 0 0 0 !important;
+    }
+
+    .start-h-container .headerA{
+        display: block;
+        font-size: 16pt !important;
+        margin-top: 30px !important;
+        padding: 0 !important; 
+    }
+    .start-h-container .headerB{
+        display: block;
+        font-size: 14pt  !important;
+        margin-top: 0px;
+        padding: 0 !important; 
+    }
+
+    .start-buttons-div{
+        display: block;
+        text-align: center;
+        border-right: none !important;
+        margin: 10px 50px 0px 0px !important;
+        padding: 0 !important; 
+    }
+
+    .start-buttons-div button{
+
+    }
+
+    .start-row{
+        border-left: 2px solid #000000 !important;
+        border-right: 2px solid #000000 !important;
+        margin: 0px 0px 0 0px !important;
+        padding: 2px 0 45px 0 !important;
+    }
+}
+
