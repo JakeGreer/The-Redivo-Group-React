@@ -10,3 +10,16 @@
     margin-left: 15px;
     margin-top: 18px;
 }
+
+.submit-btn {
+    margin-top: 10px !important;
+    background-color: #0eae9b;
+    color: white;
+}
+
+.submit-btn:hover {
+    margin-top: 10px !important;
+    background-color: #0eae9b;
+    color: white;
+    box-shadow: 1px 1px 8px black;
+}

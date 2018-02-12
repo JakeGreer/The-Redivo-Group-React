@@ -3,6 +3,6 @@ const mailer = require("../../controllers/mailController.js");
 
 router
     .route("/send")
-    .post(posts.sendMail)
+    .post(mailer.sendMail)
 
 module.exports = router

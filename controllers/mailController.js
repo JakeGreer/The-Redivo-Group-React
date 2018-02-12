@@ -1,10 +1,11 @@
+const nodemailer = require('nodemailer')
+
 module.exports = {
-    sendMail: function (req, res)
-    {
-        let { message, first, last, email } = req.body
+    sendMail: function (req, res) {
+        let {message, first, last, email} = req.body
 
         let transporter = nodemailer.createTransport({
-            service:'gmail',
+            service: 'gmail',
             auth: {
                 user: 'theredivogroupautomatedserver@gmail.com',
                 pass: 'Vikings29'
@@ -12,20 +13,21 @@ module.exports = {
 
         });
 
+        let text = message + "\n\n" + "From " + first + " " + last + "\nReturn Email: " + email;
         // setup email data with unicode symbols
         let mailOptions = {
-            from: `'${first} ${last}' <email>`, // sender address
+            from: "'Automated Server' <theredivogroupautomatedserver@gmail.com>", // sender address
             to: "stephensimone@live.com",                // list of receivers
             subject: "New Inquirer", // Subject line
-            text: message // plain text body
+            text: text // plain text body
         };
 
         // send mail with defined transport object
         transporter.sendMail(mailOptions, (error, info) => {
-            if (error) {
+            if (error)
                 console.log(error)
-                return;
-            }
             res.json(info);
         });
+
+    }
 }

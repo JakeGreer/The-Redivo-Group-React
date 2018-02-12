@@ -12,17 +12,28 @@ const ContactForm = ( props ) => {
             <form>
                 <div className="row">
                     <div className="col">
-                        <input type="text" class="form-control" placeholder="First name" />
+                        <input type="text" value={props.state.first} className="form-control"
+                               name="first" placeholder="First name" onChange={props.handleChange}/>
                     </div>
                     <div className="col">
-                        <input type="text" class="form-control" placeholder="Last name" />
+                        <input type="text" value={props.state.last} className="form-control"
+                               name="last" placeholder="Last name" onChange={props.handleChange}/>
                     </div>
                 </div>
                 <div className="row">
-                    <input type="text" id="email" class="form-control" placeholder="Email" />
+                    <input type="text" value={props.state.email} id="email" className="form-control"
+                           name="email" placeholder="Email" onChange={props.handleChange}/>
                 </div>
                 <div className="row">
-                    <textarea type="text" id="content" class="form-control" placeholder="Comments" />
+                    <textarea type="text" value={props.state.message} id="content" className="form-control"
+                              name="message" placeholder="Comments" onChange={props.handleChange}/>
+                </div>
+                <div className="row">
+                    <div className="col-5"></div>
+                        <div className="col-2">
+                            <button onClick={props.handleSubmit} className="btn submit-btn btn-lg">Submit</button>
+                        </div>
+                    <div className="col-5"></div>
                 </div>
             </form>
         </div>
