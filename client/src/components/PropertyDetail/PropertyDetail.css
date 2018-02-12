@@ -35,8 +35,13 @@
 /*****************************************************************************************/
 /*****************************************************************************************/
 
-.control-dots {
+.carousel .control-dots .dot {
+    background: #0eae9b;
     
+}
+
+.control-dots .dot.selected {
+    background: #09796c;
 }
 
 .details-info .item-id {
@@ -157,7 +162,7 @@
     font-size: 18px;
 }
 
-.info_slides > li a .fa-angle-down {
+.info_slides > li a .fa-bars {
     width: 20px;
     height: 20px;
     position: absolute;

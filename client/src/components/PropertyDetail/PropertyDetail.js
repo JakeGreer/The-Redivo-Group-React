@@ -143,12 +143,7 @@ class PropertyDetail extends Component {
                     <div className="tab-content tab-blocks">
                         <ul className="info_slides">
                             <li><a onClick={this.handleDetailsClick} className="styler_color" id="detail">
-                            {
-                                this.state.detail ? <i className="fas fa-angle-down"></i>
-                            :
-                                (<i className="fas fa-angle-right"></i>)
-                            }
-                            DETAILS</a>
+                            <i class="fas fa-bars"></i> DETAILS</a>
                             
                             {this.state.detail ? 
                             <div className="text" style={textStyle}>
@@ -217,12 +212,7 @@ class PropertyDetail extends Component {
                             }
                             </li>
                             <li><a onClick={this.handleDetailsClick} className="styler_color" id="interior">
-                            {
-                                this.state.interior ? <i className="fas fa-angle-down"></i>
-                            :
-                                (<i className="fas fa-angle-right"></i>)
-                            }
-                            INTERIOR</a>
+                            <i class="fas fa-bars"></i>INTERIOR</a>
                             {this.state.interior ? 
                             <div className="text" style={textStyle}>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque quis congue bibendum. Suspendisse vitae velit diam. Nulla vestibulum interdum lectus in vulputate. Cras et enim at lacus hendrerit condimentum. Vivamus sed nisi luctus metus bibendum semper. Etiam at facilisis ipsum. Etiam rutrum mi eget sem suscipit pellentesque. Aenean lobortis commodo eros ut sollicitudin.</p>
@@ -290,13 +280,7 @@ class PropertyDetail extends Component {
                             }
                             </li>
                             <li><a onClick={this.handleDetailsClick} className="styler_color" id="exterior">
-                            {
-                                this.state.exterior ? 
-                                (<i className="fas fa-angle-down"></i>)
-                                :
-                                (<i className="fas fa-angle-right"></i>)
-                            }
-                            EXTERIOR</a>
+                            <i class="fas fa-bars"></i>EXTERIOR</a>
                             {this.state.exterior ? 
                             <div className="text" style={textStyle}>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque quis congue bibendum. Suspendisse vitae velit diam. Nulla vestibulum interdum lectus in vulputate. Cras et enim at lacus hendrerit condimentum. Vivamus sed nisi luctus metus bibendum semper. Etiam at facilisis ipsum. Etiam rutrum mi eget sem suscipit pellentesque. Aenean lobortis commodo eros ut sollicitudin.</p>
@@ -355,14 +339,7 @@ class PropertyDetail extends Component {
                                 (<div></div>)
                                 }
                             </li>
-                            <li><a onClick={this.handleDetailsClick} className="styler_color" id="additional">
-                            {
-                                this.state.additional? 
-                                (<i className="fas fa-angle-down"></i>)
-                                :
-                                (<i className="fas fa-angle-right"></i>)
-                            }
-                            ADDITIONAL DETAILS</a>
+                            <li><a onClick={this.handleDetailsClick} className="styler_color" id="additional"><i class="fas fa-bars"></i>ADDITIONAL DETAILS</a>
                             { this.state.additional ? 
                             <div className="text" style={textStyle}>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque quis congue bibendum. Suspendisse vitae velit diam. Nulla vestibulum interdum lectus in vulputate. Cras et enim at lacus hendrerit condimentum. Vivamus sed nisi luctus metus bibendum semper. Etiam at facilisis ipsum. Etiam rutrum mi eget sem suscipit pellentesque. Aenean lobortis commodo eros ut sollicitudin.</p>
