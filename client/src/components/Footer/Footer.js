@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-3 col-sm-6 col-xs-12">
-                        <Link to="#" class="footer-logo"><img src="../public/img/Clear-Logo.png" alt="" /></Link>
+                        <Link to="#" className="footer-logo"><img src="../public/img/Clear-Logo.png" alt="" /></Link>
                     </div>
                     <div className="col-md-3 col-sm-6 col-xs-12">
                         <div className="text">
@@ -51,8 +51,8 @@ const Footer = () => {
                 </div>
             </div>
             </div>
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
+            <ul className="nav justify-content-center">
+                <li className="nav-item">
                     Copyright The Redivo Group 2018
                 </li>
             </ul>
