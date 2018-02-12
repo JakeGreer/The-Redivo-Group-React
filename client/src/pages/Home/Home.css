@@ -23,9 +23,9 @@
     background-position: center center !important;
 }
 
-.accolades-container{
+.getStarted-container{
     padding-top: 50px !important;
-    padding-bottom: 50px !important;
+    padding-bottom: 20px !important;
     background: #fff;
     height:100% !important;
     width: 100% !important;
@@ -42,6 +42,12 @@
         display: none !important;
     }
 
+    .getStarted-container{
+        padding-top: 10px 0px 10px 0 !important;
+        margin: 0 auto !important;
+        background: #fff;
+
+    }
     
     
 }
