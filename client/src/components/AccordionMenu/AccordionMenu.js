@@ -11,12 +11,14 @@ const AccordionMenu = (props) => {
             <div className="card" key={i}>
                 <div className="card-header" id="headingOne">
                 <h5 className="mb-0">
-                    <div className="header-div" data-toggle="collapse" data-target={`#collapse${i+1}`} aria-expanded={i <= 0 ? `true` : `false`} aria-controls={`collapse${i+1}`}>
+                    <div className="header-div" data-toggle="collapse" data-target={`#collapse${i+1}`}
+                         aria-expanded={i <= 0 ? `true` : `false`} aria-controls={`collapse${i+1}`}>
                     {content.header}
                     </div>
                 </h5>
                 </div>
-                <div id={`collapse${i+1}`} className={i <= 0 ? `collapse show` : `collapse`} aria-labelledby={`heading ${i+1}`} data-parent="#accordion">
+                <div id={`collapse${i+1}`} className={i <= 0 ? `collapse show` : `collapse`} aria-labelledby={`heading ${i+1}`}
+                     data-parent="#accordion">
                     <div className="card-body">
                         <div className='row accordion-panel'>
                             <div className='col-6'>
