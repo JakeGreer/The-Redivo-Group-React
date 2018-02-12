@@ -4,6 +4,7 @@
   "private": true,
   "proxy": "http://localhost:3001",
   "dependencies": {
+    "axios": "^0.17.1",
     "cors": "^2.8.4",
     "dotenv": "^5.0.0",
     "jscs": "^3.0.7",
