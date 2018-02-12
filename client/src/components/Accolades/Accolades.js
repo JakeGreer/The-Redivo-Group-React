@@ -51,10 +51,7 @@ const Accolades = () => {
     }
       return (
         <div className='container'>
-        <div className='discover-h-container'>
-                                    <h1 className='discover-h-a'>DISCOVER THE REDIVO</h1>
-                                    <h1 className='discover-h-b'>GROUP DIFFERENCE</h1> 
-                                </div>
+
         
         <Slider {...settings}>
           {slides.map(function(slide,i){

@@ -1,5 +1,5 @@
 import React from "react";
-import Accolades from '../../components/Accolades'
+import GetStarted from '../../components/GetStarted'
 import Carousel from '../../components/Carousel'
 import Discover from '../../components/Discover'
 import HeaderSlide from '../../components/HeaderSlide'
@@ -21,8 +21,8 @@ const Home = (props) => {
             <div className='testimonial-container' style={{backgroundImage:`url(${'../public/img/testimonial-bg.jpg'})`}}>
                 <Testimonial />
             </div>
-            <div className='accolades-container'>
-                <Accolades />
+            <div className='getStarted-container'>
+                <GetStarted />
             </div>
         </div>
     )
