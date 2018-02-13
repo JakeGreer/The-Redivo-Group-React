@@ -86,6 +86,11 @@ class Properties extends Component {
                 <Container>
                     <PropertyDirections/>
                     { this.renderTypes() }
+                    {/* ******************************************************************************* */}
+                    {/* ******************************************************************************* */}
+                    {/* ******************************************************************************* */}
+                    {/* This Detail component and its corresponding props follow the web template and not the api call. the props and table will need to be changed accordingly to what the object actually returns. This will be a solid format to follow just needs minor adjustments.
+                    I think this component will need to get mapped our to every card or another way to go about it would to put this component in a function which the view details button will call. Then this component will be returned with the corresponding information. The second way will probably be more efficient */}
                     <PropertyDetail
                         addressTop="8590 Highland Crest"
                         addressBottom="Dallas, TX 75208"
@@ -95,6 +100,28 @@ class Properties extends Component {
                         bedrooms="4"
                         baths="2.5"
                         mls="120876543"
+                        propType="Single Family"
+                        yearBuilt="2002"
+                        propClass="Residential"
+                        county="Dallas"
+                        subdivision="Woodlawn"
+                        lotSize="9,757 Sq Ft Lot"
+                        stories="2"
+                        garage="2 Car"
+                        fence="Wood"
+                        sprinklers="Yes"
+                        lotDim="80x135"
+                        pool="Yes-Gunite"
+                        patio="Yes-Covered"
+                        balcony="Yes"
+                        gutters="Yes"
+                        extLight="Yes"
+                        cooling="Central-Electric"
+                        heating="Central-Gas"
+                        schoolDist="Richardson ISD"
+                        elmSchool="Meriman Park"
+                        midSchool="Lake Highlands"
+                        highSchool="Lake Highlands High School"
 
                     />
                 </Container>
