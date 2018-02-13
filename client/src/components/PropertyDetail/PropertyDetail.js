@@ -134,11 +134,12 @@ class PropertyDetail extends Component {
 
             {/* Row */}
             <div className="row">
-                
+                {/* Temporary Props list for property dertails section...
+                propertyType: (single family),  yearBuilt, propertyClass: (Residential), county, subdivision, bedrooms, baths, lotSize, stories, garage*/}
                 {/* Details Section */}
                 <div className="col-md-12">
                     <ul className="tabs">
-                        <li className="active"><a className="styler_bg_color" href="#details1" data-toggle="tab">PROPERTY DETAILS</a></li>
+                        <li className="active"><a className="styler_bg_color btn disabled" href="#details1" data-toggle="tab" disabled>PROPERTY DETAILS</a></li>
                     </ul>
                     <div className="tab-content tab-blocks">
                         <ul className="info_slides">
@@ -147,7 +148,6 @@ class PropertyDetail extends Component {
                             
                             {this.state.detail ? 
                             <div className="text" style={textStyle}>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque quis congue bibendum. Suspendisse vitae velit diam. Nulla vestibulum interdum lectus in vulputate. Cras et enim at lacus hendrerit condimentum. Vivamus sed nisi luctus metus bibendum semper. Etiam at facilisis ipsum. Etiam rutrum mi eget sem suscipit pellentesque. Aenean lobortis commodo eros ut sollicitudin.</p>
                                 <div className="row">
                                     <div className="col-md-6 col-sm-6">
                                         <div className="left-tab-wrapper">
@@ -155,23 +155,23 @@ class PropertyDetail extends Component {
                                                 <tbody>
                                                     <tr>
                                                         <td><strong>Property Type:</strong></td>
-                                                        <td>Single Family</td>
+                                                        <td>{this.props.propType}</td>
                                                     </tr>
                                                     <tr>
                                                         <td><strong>Year Built:</strong></td>
-                                                        <td>2002</td>
+                                                        <td>{this.props.yearBuilt}</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><strong>Property className:</strong></td>
-                                                        <td>Residential</td>
+                                                        <td><strong>Property Class:</strong></td>
+                                                        <td>{this.props.propClass}</td>
                                                     </tr>
                                                     <tr>
                                                         <td><strong>County:</strong></td>
-                                                        <td>Dallas</td>
+                                                        <td>{this.props.county}</td>
                                                     </tr>
                                                     <tr>
                                                         <td><strong>Subdivision:</strong></td>
-                                                        <td>Woodlawn</td>
+                                                        <td>{this.props.subdivision}</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -183,23 +183,23 @@ class PropertyDetail extends Component {
                                                 <tbody>
                                                     <tr>
                                                         <td><strong>Bedrooms:</strong></td>
-                                                        <td>4</td>
+                                                        <td>{this.props.bedrooms}</td>
                                                     </tr>
                                                     <tr>
                                                         <td><strong>Baths:</strong></td>
-                                                        <td>2.5</td>
+                                                        <td>{this.props.baths}</td>
                                                     </tr>
                                                     <tr>
                                                         <td><strong>Lot Size:</strong></td>
-                                                        <td>9,757 Sq Ft Lot</td>
+                                                        <td>{this.props.lotSize}</td>
                                                     </tr>
                                                     <tr>
                                                         <td><strong>Stories:</strong></td>
-                                                        <td>2</td>
+                                                        <td>{this.props.stories}</td>
                                                     </tr>
                                                     <tr>
                                                         <td><strong>Garage:</strong></td>
-                                                        <td>2 Car</td>
+                                                        <td>{this.props.garage}</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -215,7 +215,9 @@ class PropertyDetail extends Component {
                             <i class="fas fa-bars"></i>INTERIOR</a>
                             {this.state.interior ? 
                             <div className="text" style={textStyle}>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque quis congue bibendum. Suspendisse vitae velit diam. Nulla vestibulum interdum lectus in vulputate. Cras et enim at lacus hendrerit condimentum. Vivamus sed nisi luctus metus bibendum semper. Etiam at facilisis ipsum. Etiam rutrum mi eget sem suscipit pellentesque. Aenean lobortis commodo eros ut sollicitudin.</p>
+                                {/* I dont think the API returns any of this information so this section will most likely be deleted or replaced with different information. I am not going to assign props for this section just yet until that is figured out. Temporary Props List for the Interior Section
+                                livingAreaOne, livingAreaTwo, DiningRoom, masterBedroom, kitchen, bedroomOne, bedroomTwo, bedroomThree, study, utilityRoom
+                                */}
                                 <div className="row">
                                     <div className="col-md-6 col-sm-6">
                                         <div className="left-tab-wrapper">
@@ -283,7 +285,8 @@ class PropertyDetail extends Component {
                             <i class="fas fa-bars"></i>EXTERIOR</a>
                             {this.state.exterior ? 
                             <div className="text" style={textStyle}>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque quis congue bibendum. Suspendisse vitae velit diam. Nulla vestibulum interdum lectus in vulputate. Cras et enim at lacus hendrerit condimentum. Vivamus sed nisi luctus metus bibendum semper. Etiam at facilisis ipsum. Etiam rutrum mi eget sem suscipit pellentesque. Aenean lobortis commodo eros ut sollicitudin.</p>
+                                {/* Temporary Variables Used for the Exterior Section
+                                fence, sprinklers, lotDimensions, pool, patio, balcony, gutters, exteriorLight */}
                                 <div className="row">
                                     <div className="col-md-6 col-sm-6">
                                         <div className="left-tab-wrapper">
@@ -291,19 +294,19 @@ class PropertyDetail extends Component {
                                                 <tbody>
                                                     <tr>
                                                         <td><strong>Fence:</strong></td>
-                                                        <td>Wood</td>
+                                                        <td>{this.props.fence}</td>
                                                     </tr>
                                                     <tr>
                                                         <td><strong>Sprinkler System:</strong></td>
-                                                        <td>Yes</td>
+                                                        <td>{this.props.sprinklers}</td>
                                                     </tr>
                                                     <tr>
                                                         <td><strong>Lot Dimensions:</strong></td>
-                                                        <td>80x135</td>
+                                                        <td>{this.props.lotDim}</td>
                                                     </tr>
                                                     <tr>
                                                         <td><strong>Pool:</strong></td>
-                                                        <td>Yes - Gunite</td>
+                                                        <td>{this.props.pool}</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -315,19 +318,19 @@ class PropertyDetail extends Component {
                                                     <tbody>
                                                         <tr>
                                                             <td><strong>Patio:</strong></td>
-                                                            <td>Yes - Covered</td>
+                                                            <td>{this.props.patio}</td>
                                                         </tr>
                                                         <tr>
                                                             <td><strong>Balcony:</strong></td>
-                                                            <td>Yes</td>
+                                                            <td>{this.props.balcony}</td>
                                                         </tr>
                                                         <tr>
                                                             <td><strong>Gutters:</strong></td>
-                                                            <td>Yes</td>
+                                                            <td>{this.props.gutters}</td>
                                                         </tr>
                                                         <tr>
                                                             <td><strong>Exterior Lighting:</strong></td>
-                                                            <td>Yes</td>
+                                                            <td>{this.props.extLight}</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -342,7 +345,8 @@ class PropertyDetail extends Component {
                             <li><a onClick={this.handleDetailsClick} className="styler_color" id="additional"><i class="fas fa-bars"></i>ADDITIONAL DETAILS</a>
                             { this.state.additional ? 
                             <div className="text" style={textStyle}>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque quis congue bibendum. Suspendisse vitae velit diam. Nulla vestibulum interdum lectus in vulputate. Cras et enim at lacus hendrerit condimentum. Vivamus sed nisi luctus metus bibendum semper. Etiam at facilisis ipsum. Etiam rutrum mi eget sem suscipit pellentesque. Aenean lobortis commodo eros ut sollicitudin.</p>
+                                    {/* This is the temporary list of props used for the Additional Details section
+                                     garage, cooling, heating, subdivision, schoolDist, elmSchool, midSchool, highSchool*/}
                                     <div className="row">
                                         <div className="col-md-6 col-sm-6">
                                             <div className="left-tab-wrapper">
@@ -350,19 +354,19 @@ class PropertyDetail extends Component {
                                                     <tbody>
                                                         <tr>
                                                             <td><strong>Garage:</strong></td>
-                                                            <td>2 Car</td>
+                                                            <td>{this.props.garage}</td>
                                                         </tr>
                                                         <tr>
                                                             <td><strong>Cooling:</strong></td>
-                                                            <td>Central - Electric</td>
+                                                            <td>{this.props.cooling}</td>
                                                         </tr>
                                                         <tr>
                                                             <td><strong>Heating:</strong></td>
-                                                            <td>Central - Gas</td>
+                                                            <td>{this.props.heating}</td>
                                                         </tr>
                                                         <tr>
                                                             <td><strong>Subdivision:</strong></td>
-                                                            <td>Woodlawn</td>
+                                                            <td>{this.props.subdivision}</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -374,19 +378,19 @@ class PropertyDetail extends Component {
                                                     <tbody>
                                                         <tr>
                                                             <td><strong>School District:</strong></td>
-                                                            <td>Richardson ISD</td>
+                                                            <td>{this.props.schoolDist}</td>
                                                         </tr>
                                                         <tr>
                                                             <td><strong>Elementary School:</strong></td>
-                                                            <td>Merriman Park</td>
+                                                            <td>{this.props.elmSchool}</td>
                                                         </tr>
                                                         <tr>
                                                             <td><strong>Middle School:</strong></td>
-                                                            <td>Lake Highlands</td>
+                                                            <td>{this.props.midSchool}</td>
                                                         </tr>
                                                         <tr>
                                                             <td><strong>High School:</strong></td>
-                                                            <td>Lake Highlands High School</td>
+                                                            <td>{this.props.highSchool}</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
