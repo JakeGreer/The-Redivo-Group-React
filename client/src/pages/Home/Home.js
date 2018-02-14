@@ -4,6 +4,7 @@ import Carousel from '../../components/Carousel'
 import Discover from '../../components/Discover'
 import HeaderSlide from '../../components/HeaderSlide'
 import Testimonial from '../../components/Testimonial'
+import Autocomplete from '../../components/Autocomplete'
 import './Home.css'
 
 const Home = (props) => {
@@ -24,6 +25,10 @@ const Home = (props) => {
             <div className='getStarted-container'>
                 <GetStarted />
             </div>
+            <div className='container'>
+                <Autocomplete />
+            </div>
+
         </div>
     )
 }
