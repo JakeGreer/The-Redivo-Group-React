@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import  Jumbotron from "../../components/Jumbotron"
-import { Container } from "../../components/Grid"
+import React, {Component} from 'react'
+import Jumbotron from "../../components/Jumbotron"
+import {Container} from "../../components/Grid"
 import PropTypeSection from "../../components/PropTypeSection"
 import CityTypeSection from "../../components/CityTypeSection"
 import PropertyDirections from "../../components/PropertyDirections"
@@ -27,52 +27,57 @@ class Properties extends Component {
     }
 
     renderTypes = () => {
-        if(this.state.initSelector) {
-            return <InitSelector clickFunction={ this.handleInitSelector }/>
+        if (this.state.initSelector) {
+            return <InitSelector clickFunction={this.handleInitSelector}/>
         }
 
-        if( this.state.propType ) {
-            return <PropTypeSection clickFunction={ this.handlePropType }/>
+        if (this.state.propType) {
+            return <PropTypeSection clickFunction={this.handlePropType}/>
         }
-        
-        if( this.state.cities ) {
+
+        if (this.state.cities) {
             return (
                 <div>
-                    <CityTypeSection clickFunction={ this.renderCities }/>
+                    <CityTypeSection clickFunction={this.renderCities}/>
                     <PropertyCustomSearch/>
-                    <PropertySearchField/>
-                </div>)
+                    <PropertySearchField queryString={this.state.queryString} typeString={this.state.typeString}/>
+                </div>
+            )
         }
 
-        if( this.state.cards) {
+        if (this.state.cards) {
             return (
                 <div>
                     {/*<PropCardSection array={}/>*/}
                     <PropertyCustomSearch/>
-                    <PropertySearchField/>
-                </div>)
+                    <PropertySearchField queryString={this.state.queryString} typeString={this.state.typeString}/>
+                </div>
+            )
         }
+    }
+    stateCheck = (e) => {
+        e.preventDefault()
+        console.log('state', this.state)
     }
 
     renderCities = (e) => {
         let city = e.target.id
         let query = this.state.queryString
         query += city
-        this.setState({ cities: false, cards: true, queryString: query })
+        this.setState({cities: false, cards: true, queryString: query})
     }
-
 
     handlePropType = (e) => {
         let type = e.target.id;
         let query = this.state.typeString
 
         query += " " + type
-        this.setState({ queryString: query, propType: false, cities: true })
+        this.setState({queryString: query, propType: false, cities: true})
     }
 
     handleInitSelector = (e) => {
         let type = e.target.id;
-        this.setState({ initSelector: false, propType: true, typeString: type })
+        this.setState({initSelector: false, propType: true, typeString: type})
     }
 
     handleDetails = (e) => {
@@ -80,12 +85,12 @@ class Properties extends Component {
     }
 
     render() {
+
         return (
             <div>
-                <Jumbotron header = "Properties"/>
+                <Jumbotron header="Properties"/>
                 <Container>
-                    <PropertyDirections/>
-                    { this.renderTypes() }
+                    <PropertyDirections/> {this.renderTypes()}
                     {/* ******************************************************************************* */}
                     {/* ******************************************************************************* */}
                     {/* ******************************************************************************* */}
@@ -95,7 +100,15 @@ class Properties extends Component {
                         addressTop="8590 Highland Crest"
                         addressBottom="Dallas, TX 75208"
                         price="$689,000"
-                        propertyImages={["../public/img/house1.jpg","../public/img/house2.jpg", "../public/img/house3.jpg", "../public/img/house4.jpg", "../public/img/house5.jpg", "../public/img/house7.jpg", "../public/img/house8.jpg" ]}
+                        propertyImages={[
+                        "../public/img/house1.jpg",
+                        "../public/img/house2.jpg",
+                        "../public/img/house3.jpg",
+                        "../public/img/house4.jpg",
+                        "../public/img/house5.jpg",
+                        "../public/img/house7.jpg",
+                        "../public/img/house8.jpg"
+                    ]}
                         sqrft="3,100"
                         bedrooms="4"
                         baths="2.5"
@@ -130,9 +143,7 @@ class Properties extends Component {
                         schoolDist="Richardson ISD"
                         elmSchool="Meriman Park"
                         midSchool="Lake Highlands"
-                        highSchool="Lake Highlands High School"
-
-                    />
+                        highSchool="Lake Highlands High School"/>
                 </Container>
             </div>
         )

@@ -1,11 +1,12 @@
 // Defining methods for the postController
+var axios = require('axios')
 module.exports = {
-    search: function(req, result) {
+    search: function (req, result) {
 
         let type = "/properties?&"
         let query = req.body.query
 
-        if( query ) {
+        if (query) {
             type += query
         }
 
@@ -16,16 +17,20 @@ module.exports = {
             auth: "simplyrets:simplyrets"
         };
 
-        https.get(options, function(res) {
+        https.get(options, function (res) {
             var body = "";
-            res.on('data', function(chunk) {
+            res.on('data', function (chunk) {
                 body += chunk;
             });
-            res.on('end', function() {
+            res.on('end', function () {
                 var response = JSON.parse(body);
                 result.json(response)
             });
         });
-    }
+    },
+    // autoc: function (req, res) {
+    //     axios.get(`https://maps.googleapis.com/maps/api/place/autocomplete/json?input=Amoeba&types=establishment&location=37.76999,-122.44696&radius=500&key=${process.env.GOOGLE_API_KEY}`)
+    //     .then(result => res.json(result.data))
+    //     .catch(err => console.log("error",err))
+    // }
 };
-  
