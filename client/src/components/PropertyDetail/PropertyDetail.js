@@ -135,7 +135,7 @@ class PropertyDetail extends Component {
             {/* Row */}
             <div className="row">
                 {/* Temporary Props list for property dertails section...
-                propertyType: (single family),  yearBuilt, propertyClass: (Residential), county, subdivision, bedrooms, baths, lotSize, stories, garage*/}
+                propStyle: (single family),  yearBuilt, propClass: (Residential), county, subdivision, bedrooms, baths, lotSize, stories, garage*/}
                 {/* Details Section */}
                 <div className="col-md-12">
                     <ul className="tabs">
@@ -154,8 +154,8 @@ class PropertyDetail extends Component {
                                             <table className="details-values">
                                                 <tbody>
                                                     <tr>
-                                                        <td><strong>Property Type:</strong></td>
-                                                        <td>{this.props.propType}</td>
+                                                        <td><strong>Property Style:</strong></td>
+                                                        <td>{this.props.propStyle}</td>
                                                     </tr>
                                                     <tr>
                                                         <td><strong>Year Built:</strong></td>
@@ -215,33 +215,41 @@ class PropertyDetail extends Component {
                             <i class="fas fa-bars"></i>INTERIOR</a>
                             {this.state.interior ? 
                             <div className="text" style={textStyle}>
-                                {/* I dont think the API returns any of this information so this section will most likely be deleted or replaced with different information. I am not going to assign props for this section just yet until that is figured out. Temporary Props List for the Interior Section
-                                livingAreaOne, livingAreaTwo, DiningRoom, masterBedroom, kitchen, bedroomOne, bedroomTwo, bedroomThree, study, utilityRoom
+                                {/* Props List for the Interior Section
+                                interiorFeatures, laundryFeat, bathHalf, bathFull, fireplace, addRooms, heating, cooling
                                 */}
                                 <div className="row">
+                                {/* since the response sends back major interior features as one string they will be represented here if they exist while the highlighted points remian in the table */
+                                    this.props.interiorFeatures ? 
+                                        (
+                                        <div className="interior-det col-md-12">
+                                        <p><strong>Interior Features Include: </strong>{this.props.interiorFeatures}</p>
+                                        </div>
+                                        )
+                                    :
+                                        (
+                                        <div></div>
+                                        )
+                                } 
                                     <div className="col-md-6 col-sm-6">
                                         <div className="left-tab-wrapper">
                                             <table className="details-values">
                                                 <tbody>
                                                     <tr>
-                                                        <td><strong>Living Area 1:</strong></td>
-                                                        <td>22 x 24</td>
+                                                        <td><strong>Laundry Features:</strong></td>
+                                                        <td>{this.props.laundryFeat}</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><strong>Living Area 2:</strong></td>
-                                                        <td>14 x 24</td>
+                                                        <td><strong>Baths Half:</strong></td>
+                                                        <td>{this.props.bathHalf}</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><strong>Dining Room:</strong></td>
-                                                        <td>22 x 24</td>
+                                                        <td><strong>Baths Full:</strong></td>
+                                                        <td>{this.props.bathFull}</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><strong>Master Bedroom:</strong></td>
-                                                        <td>22 x 24</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><strong>Kitchen:</strong></td>
-                                                        <td>22 x 24</td>
+                                                        <td><strong>Fireplaces:</strong></td>
+                                                        <td>{this.props.fireplace}</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -252,24 +260,16 @@ class PropertyDetail extends Component {
                                             <table className="details-values">
                                                 <tbody>
                                                     <tr>
-                                                        <td><strong>Bedroom 1:</strong></td>
-                                                        <td>22 x 24</td>
+                                                        <td><strong>Additional Rooms:</strong></td>
+                                                        <td>{this.props.addRooms}</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><strong>Bedroom 2:</strong></td>
-                                                        <td>22 x 24</td>
+                                                        <td><strong>Heating:</strong></td>
+                                                        <td>{this.props.heating}</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><strong>Bedroom 3:</strong></td>
-                                                        <td>22 x 24</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><strong>Study:</strong></td>
-                                                        <td>22 x 24</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><strong>Utility Room:</strong></td>
-                                                        <td>22 x 24</td>
+                                                        <td><strong>Cooling:</strong></td>
+                                                        <td>{this.props.cooling}</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -285,20 +285,32 @@ class PropertyDetail extends Component {
                             <i class="fas fa-bars"></i>EXTERIOR</a>
                             {this.state.exterior ? 
                             <div className="text" style={textStyle}>
-                                {/* Temporary Variables Used for the Exterior Section
-                                fence, sprinklers, lotDimensions, pool, patio, balcony, gutters, exteriorLight */}
+                                {/* Props Used for the Exterior Section
+                                exteriorFeatures, roof, foundation, lotDimensions, pool, parking, garage, accessibility, view */}
                                 <div className="row">
+                                                                    {/* since the response sends back major interior features as one string they will be represented here if they exist while the highlighted points remian in the table */
+                                    this.props.exteriorFeatures ? 
+                                    (
+                                    <div className="interior-det col-md-12">
+                                    <p><strong>Exterior Features Include: </strong>{this.props.exteriorFeatures}</p>
+                                    </div>
+                                    )
+                                :
+                                    (
+                                    <div></div>
+                                    )
+                            } 
                                     <div className="col-md-6 col-sm-6">
                                         <div className="left-tab-wrapper">
                                             <table className="details-values">
                                                 <tbody>
                                                     <tr>
-                                                        <td><strong>Fence:</strong></td>
-                                                        <td>{this.props.fence}</td>
+                                                        <td><strong>Roof:</strong></td>
+                                                        <td>{this.props.roof}</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><strong>Sprinkler System:</strong></td>
-                                                        <td>{this.props.sprinklers}</td>
+                                                        <td><strong>Foundation:</strong></td>
+                                                        <td>{this.props.foundation}</td>
                                                     </tr>
                                                     <tr>
                                                         <td><strong>Lot Dimensions:</strong></td>
@@ -317,20 +329,20 @@ class PropertyDetail extends Component {
                                                 <table className="details-values">
                                                     <tbody>
                                                         <tr>
-                                                            <td><strong>Patio:</strong></td>
-                                                            <td>{this.props.patio}</td>
+                                                            <td><strong>Parking:</strong></td>
+                                                            <td>{this.props.parking}</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><strong>Balcony:</strong></td>
-                                                            <td>{this.props.balcony}</td>
+                                                            <td><strong>Garage Spaces:</strong></td>
+                                                            <td>{this.props.garage}</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><strong>Gutters:</strong></td>
-                                                            <td>{this.props.gutters}</td>
+                                                            <td><strong>Accessibility:</strong></td>
+                                                            <td>{this.props.accessibility}</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><strong>Exterior Lighting:</strong></td>
-                                                            <td>{this.props.extLight}</td>
+                                                            <td><strong>View:</strong></td>
+                                                            <td>{this.props.view}</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -346,23 +358,35 @@ class PropertyDetail extends Component {
                             { this.state.additional ? 
                             <div className="text" style={textStyle}>
                                     {/* This is the temporary list of props used for the Additional Details section
-                                     garage, cooling, heating, subdivision, schoolDist, elmSchool, midSchool, highSchool*/}
+                                     parkDesc, yearBuilt, heating, subdivision, schoolDist, elmSchool, midSchool, highSchool, amenities*/}
                                     <div className="row">
+                                                                    {/* since the response sends back major interior features as one string they will be represented here if they exist while the highlighted points remian in the table */
+                                    this.props.amenities ? 
+                                    (
+                                    <div className="interior-det col-md-12">
+                                    <p><strong>Property amenities include: </strong>{this.props.amenities}</p>
+                                    </div>
+                                    )
+                                :
+                                    (
+                                    <div></div>
+                                    )
+                            } 
                                         <div className="col-md-6 col-sm-6">
                                             <div className="left-tab-wrapper">
                                                 <table className="details-values">
                                                     <tbody>
                                                         <tr>
-                                                            <td><strong>Garage:</strong></td>
-                                                            <td>{this.props.garage}</td>
+                                                            <td><strong>Parking Description:</strong></td>
+                                                            <td>{this.props.parkDesc}</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><strong>Cooling:</strong></td>
-                                                            <td>{this.props.cooling}</td>
+                                                            <td><strong>Year Built:</strong></td>
+                                                            <td>{this.props.yearBuilt}</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><strong>Heating:</strong></td>
-                                                            <td>{this.props.heating}</td>
+                                                            <td><strong>Property Area:</strong></td>
+                                                            <td>{this.props.area}</td>
                                                         </tr>
                                                         <tr>
                                                             <td><strong>Subdivision:</strong></td>
