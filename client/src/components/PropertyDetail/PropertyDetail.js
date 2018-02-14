@@ -329,7 +329,7 @@ class PropertyDetail extends Component {
                                                 <table className="details-values">
                                                     <tbody>
                                                         <tr>
-                                                            <td><strong>Parking:</strong></td>
+                                                            <td><strong>Parking Spaces:</strong></td>
                                                             <td>{this.props.parking}</td>
                                                         </tr>
                                                         <tr>
@@ -357,7 +357,7 @@ class PropertyDetail extends Component {
                             <li><a onClick={this.handleDetailsClick} className="styler_color" id="additional"><i class="fas fa-bars"></i>ADDITIONAL DETAILS</a>
                             { this.state.additional ? 
                             <div className="text" style={textStyle}>
-                                    {/* This is the temporary list of props used for the Additional Details section
+                                    {/* props used for the Additional Details section
                                      parkDesc, yearBuilt, heating, subdivision, schoolDist, elmSchool, midSchool, highSchool, amenities*/}
                                     <div className="row">
                                                                     {/* since the response sends back major interior features as one string they will be represented here if they exist while the highlighted points remian in the table */
