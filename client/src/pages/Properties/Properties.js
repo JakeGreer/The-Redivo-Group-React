@@ -94,7 +94,7 @@ class Properties extends Component {
                     {/* ******************************************************************************* */}
                     {/* ******************************************************************************* */}
                     {/* ******************************************************************************* */}
-                    {/* This Detail component and its corresponding props follow the web template and not the api call. the props and table will need to be changed accordingly to what the object actually returns. This will be a solid format to follow just needs minor adjustments.
+                    {/*I hard coded some examply data from one of the responses i got back to show what it will look like...
                     I think this component will need to get mapped our to every card or another way to go about it would to put this component in a function which the view details button will call. Then this component will be returned with the corresponding information. The second way will probably be more efficient */}
                     <PropertyDetail
                         addressTop="8590 Highland Crest"
@@ -113,7 +113,7 @@ class Properties extends Component {
                         bedrooms="4"
                         baths="2.5"
                         mls="120876543"
-                        propType="Single Family"
+                        propStyle="Ranch"
                         yearBuilt="2002"
                         propClass="Residential"
                         county="Dallas"
@@ -121,16 +121,25 @@ class Properties extends Component {
                         lotSize="9,757 Sq Ft Lot"
                         stories="2"
                         garage="2 Car"
-                        fence="Wood"
-                        sprinklers="Yes"
+                        interiorFeatures="Drapes/Curtains/Window Cover, Fire/Smoke Alarm, High Ceiling, Island Kitchen"
+                        exteriorFeatures="Back Yard Fenced, Covered Patio/Deck, Patio/Deck"
+                        laundryFeat="Area,Electric Dryer Hookup,Individual Room,Washer Hookup"
+                        bathHalf="5"
                         lotDim="80x135"
                         pool="Yes-Gunite"
-                        patio="Yes-Covered"
-                        balcony="Yes"
-                        gutters="Yes"
-                        extLight="Yes"
+                        bathFull="6"
+                        fireplace="Yes"
+                        addRooms="Recreation, Master Bedroom"
+                        roof="Tile"
+                        parking="6"
+                        foundation= "Slab"
+                        view="Golf Course"
+                        area="1043"
+                        accessibility="Manned Gate"
+                        parkDesc="Garage Door Opener,Public,Garage,Side by Side"
                         cooling="Central-Electric"
                         heating="Central-Gas"
+                        amenities="Club House,Community Pool,Garden/ Greenbelt/ Trails,Playground,Recreation Room,Sauna/ Spa/ Hot Tub"
                         schoolDist="Richardson ISD"
                         elmSchool="Meriman Park"
                         midSchool="Lake Highlands"
