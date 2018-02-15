@@ -90,7 +90,8 @@ class Properties extends Component {
             <div>
                 <Jumbotron header="Properties"/>
                 <Container>
-                    <PropertyDirections/> {this.renderTypes()}
+                    <PropertyDirections/>
+                    {this.renderTypes()}
                     {/* ******************************************************************************* */}
                     {/* ******************************************************************************* */}
                     {/* ******************************************************************************* */}
