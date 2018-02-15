@@ -3,7 +3,8 @@ import axios from 'axios'
 import PlacesAutocomplete, {geocodeByAddress} from 'react-places-autocomplete'
 import defaultStyles from './defaultStyles.js'
 import './Autocomplete.css'
-export class Autocomplete extends React.Component {
+
+class Autocomplete extends React.Component {
 
     state = {
         address: '', //autocomplete address
@@ -11,7 +12,6 @@ export class Autocomplete extends React.Component {
         cityString: '', //formatted string with spaces replaced by +'s
         locationObject: {}, //autocomplete result after submitting
 	}
-	
 	//this is checking the <input>
     onChange = (address, placeId) => this.setState({address, placeId})
 
