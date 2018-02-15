@@ -5,10 +5,17 @@ module.exports = {
 
         let type = "/properties?&"
         let query = req.body.query
+        let searchType = req.body.searchType
 
         if (query) {
-            type += query
+            type += "q=" + query
         }
+
+        if(searchType !== "") {
+            type += "&type=" + searchType
+        }
+
+        console.log("TYPE: ", type)
 
         var https = require('https');
         var options = {

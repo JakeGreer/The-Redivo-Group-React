@@ -46,8 +46,10 @@ class Autocomplete extends React.Component {
                     .toLowerCase()
                     .trim()
             }, //in this callback is probably where you would make the query string using the city, maybe even call the API from here, up to you
-                    () => console.log('City String', this.state.cityString))
+                    () => this.props.handleSearch(this.state.cityString,""))
         }).catch(error => console.error(error))
+
+
     }
 
     //Says what the autocomplete is looking for

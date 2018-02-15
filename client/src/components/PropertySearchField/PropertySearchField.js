@@ -6,7 +6,7 @@ import Autocomplete from '../Autocomplete'
 const PropertySearchField = (props) => { 
     return (        
         <div className="auto-complete-div">
-                <Autocomplete queryString={props.queryString} typeString={props.typeString} />
+                <Autocomplete handleSearch={prps.handleSearch} queryString={props.queryString} typeString={props.typeString} />
                 {/*I commented this out, I don't know if you need anything off it still, delete it if you dont */}
                 {/* <form className="form-wrapper">
                     <input

@@ -1,17 +1,18 @@
 const URL = [
     "../public/img/SanClemente.png",
-    "../public/img/San-Juan.jpg",
-    "../public/img/Costa-Mesa.jpg",
-    "../public/img/Dana-Point.jpg",
-    "../public/img/Carlsbad.jpg",
-    "../public/img/La-Jolla.jpg",
-    "../public/img/laguna-niguel.jpg",
-    "../public/img/laguna-beach.jpg",
-    "../public/img/Encinitas.jpg",
-    "../public/img/Del-Mar.jpg",
-    "../public/img/newport.jpg",
-    "../public/img/Irvine.jpg",
-    "../public/img/Berverly-Hills.jpg"
+    "../public/img/San-Juan.png",
+    "../public/img/brentwood.png",
+    "../public/img/Costa-Mesa.png",
+    "../public/img/Dana-Point.png",
+    "../public/img/Carlsbad.png",
+    "../public/img/La-Jolla.png",
+    "../public/img/laguna-niguel.png",
+    "../public/img/laguna-beach.png",
+    "../public/img/Encinitas.png",
+    "../public/img/Del-Mar.png",
+    "../public/img/newport.png",
+    "../public/img/Irvine.png",
+    "../public/img/Beverly-Hills.png"
 ]
 
 export default URL
