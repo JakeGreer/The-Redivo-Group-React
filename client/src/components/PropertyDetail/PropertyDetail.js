@@ -58,7 +58,7 @@ class PropertyDetail extends Component {
         overflow: "hidden"
     }
     return(
-        <div>
+        <div className="row">
 
             {/**************************************************^*******/
              /**********************************************************/}

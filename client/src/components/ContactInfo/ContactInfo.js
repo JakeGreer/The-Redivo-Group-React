@@ -11,18 +11,18 @@ const ContactInfo = () => {
                 </div>
                 <Container>
                     <ul className="contact-li">
-                        <li className="">
+                        <li className="contact-text">
                             <i className="fa fa-globe contact-icon"></i>
                             209 AVENIDA DEL
                             MAR
                             SUITE 104
                             SAN CLEMENTE, CA
                         </li>
-                        <li className="">
+                        <li className="contact-text">
                             <i className="fa fa-phone contact-icon"></i>
                             p. (949) 838-5449
                         </li>
-                        <li className="">
+                        <li className="contact-text">
                             <i className="fa fa-envelope contact-icon"></i>
                             hello@realestatepro.com
                         </li>
