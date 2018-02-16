@@ -4,19 +4,21 @@ import Card from "../../components/Card"
 const PropCardSection = ( props ) => {
     return (
         <div className="row">
-                props.array.map(( element, i ) => {
-                    <div className="col-md-4" key={i}>
+            { props.array.map( (element,i) => {
+                   return(<div className="col-md-4" key={i}>
                         <Card
-                            src = "../public/img/house1.jpg"
-                            title = "Pool & Spa"
-                            price = "689,000"
-                            address = "8950 Highland Crest Dallas, TX 75208"
-                            sqrft = "3,100"
-                            bedrooms = "4"
-                            baths = "2.5"
+                            src = {element.photos[0]}
+                            title = "For Sale"
+                            price = {element.sales.closePrice}
+                            address = {element.address.full}
+                            sqrft = {element.property.area + " sqr/ft"}
+                            bedrooms = {element.property.bedrooms}
+                            baths = {element.property.bathsFull}
+                            id = {i}
+                            handleDetails = {props.handleDetails}
                         />
-                    </div>
-                })
+                    </div>)
+                })}
         </div>
     )
 }

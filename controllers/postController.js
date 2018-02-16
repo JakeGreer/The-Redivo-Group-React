@@ -16,6 +16,7 @@ module.exports = {
         }
 
         console.log("TYPE: ", type)
+        console.log("QUERY: ", query)
 
         var https = require('https');
         var options = {
