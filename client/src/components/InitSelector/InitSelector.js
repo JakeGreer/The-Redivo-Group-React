@@ -5,16 +5,16 @@ const InitSelector = ( props ) =>  {
     return (
         <div className="row">
             <div className="col-4">
-                <SelectorBtn image={"../public/img/Residential.png"} clickFunction={props.clickFunction}
+                <SelectorBtn image={"../public/img/buy.jpg"} clickFunction={props.clickFunction}
                              id={"Buy"}/>
             </div>
             <div className="col-4">
-                <SelectorBtn image={"../public/img/Residential.png"} clickFunction={props.clickFunction}
-                             id={"Rent"}/>
+                <SelectorBtn image={"../public/img/rent.jpg"} clickFunction={props.clickFunction}
+                             id={"Sell"}/>
             </div>
             <div className="col-4">
-                <SelectorBtn image={"../public/img/Residential.png"} clickFunction={props.clickFunction}
-                             id={"Sell"}/>
+                <SelectorBtn image={"../public/img/sell.jpg"} clickFunction={props.clickFunction}
+                             id={"Rent"}/>
             </div>
         </div>
     )

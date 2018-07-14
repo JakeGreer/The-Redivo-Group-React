@@ -5,7 +5,7 @@ const Card = (props) => {
 
     return (         
             <div className="card">
-                <img className="card-img-top" src={props.src} alt="Property Image"/>
+                <img className="card-img-top img-fluid" src={props.src} alt="Property Image"/>
                 <div className="card-price">{"$" + props.price}</div>
                 <div className="card-block content">
                     <h4 className="card-title">{props.title}</h4>
@@ -17,7 +17,7 @@ const Card = (props) => {
                             <li className="card-baths"><i class="fas fa-bath"></i>{props.baths + " Baths"}</li>
                         </ul>
                     </div>
-                    <a href="#" className="btn btn-primary text-center property-link" onClick={props.handleDetails}>View Details</a>
+                    <a id={props.id} className="btn btn-primary text-center property-link" onClick={props.handleDetails}>View Details</a>
                 </div>
             </div>
         )

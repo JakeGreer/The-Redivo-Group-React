@@ -1,6 +1,13 @@
 {
+<<<<<<< HEAD
   "main.css": "static/css/main.520cd303.css",
   "main.css.map": "static/css/main.520cd303.css.map",
   "main.js": "static/js/main.870faa94.js",
   "main.js.map": "static/js/main.870faa94.js.map"
+=======
+  "main.css": "static/css/main.31af8917.css",
+  "main.css.map": "static/css/main.31af8917.css.map",
+  "main.js": "static/js/main.705ca251.js",
+  "main.js.map": "static/js/main.705ca251.js.map"
+>>>>>>> refs/remotes/origin/master
 }
