@@ -128,22 +128,22 @@ class Properties extends Component {
     this.setState({ cities: false, cards: true, queryString: city });
   };
 
-  grabDataAndDisplayCards = (queryString, typeString) => {
-    return new Promise((res, rej) => {
-      axios
-        .post("/api/user/search", {
-          query: queryString,
-          searchType: typeString
-        })
-        .then(response => {
-          this.setState({ data: response.data });
-        })
-        .catch(error => {
-          console.log(error);
-          rej(error);
-        });
-    });
-  };
+  // grabDataAndDisplayCards = (queryString, typeString) => {
+  //   return new Promise((res, rej) => {
+  //     axios
+  //       .post("/api/user/search", {
+  //         query: queryString,
+  //         searchType: typeString
+  //       })
+  //       .then(response => {
+  //         this.setState({ data: response.data });
+  //       })
+  //       .catch(error => {
+  //         console.log(error);
+  //         rej(error);
+  //       });
+  //   });
+  // };
 
   handlePropType = e => {
     let type = e.target.id;
