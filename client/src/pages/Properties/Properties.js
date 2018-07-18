@@ -13,20 +13,17 @@ import PropCardSection from "./PropCardSection";
 import "./Properties.css";
 
 class Properties extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      initSelector: true,
-      propType: false,
-      displayDetails: false,
-      cities: false,
-      cards: false,
-      selectedProp: null,
-      queryString: "",
-      typeString: "",
-      data: []
-    };
-  }
+  state = {
+    initSelector: true,
+    propType: false,
+    displayDetails: false,
+    cities: false,
+    cards: false,
+    selectedProp: null,
+    queryString: "",
+    typeString: "",
+    data: []
+  };
 
   renderTypes = () => {
     if (this.state.initSelector) {

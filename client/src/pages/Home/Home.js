@@ -3,7 +3,7 @@ import GetStarted from "./GetStarted";
 import Discover from "./Discover";
 import HeaderSlide from "./HeaderSlide";
 import Testimonial from "./Testimonial";
-import Autocomplete from "./Autocomplete";
+import Autocomplete from "../../components/Autocomplete";
 import "./Home.css";
 
 const Home = props => {
