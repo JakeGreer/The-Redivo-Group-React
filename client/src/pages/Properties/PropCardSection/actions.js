@@ -1,10 +1,11 @@
 import propertiesService from "../../../services/axios/propertiesService";
+import { FETCH_PROPERTIES } from "../constants";
 
-export default function(values, cb) {
+export function fetchProperties(values, cb) {
   const request = propertiesService.post(null, values).then(() => cb());
 
   return {
-    type: fetchProperties,
+    type: FETCH_PROPERTIES,
     payload: request
   };
 }

@@ -1,15 +1,16 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import Card from "../../../components/Card";
-import fetchProperties from "../reducer_properties";
+import mapStateToProps from "./mapState";
+import fetchProperties from "../actions";
 
 class PropCardSection extends Component {
   render() {
     return (
       <div className="row">
-        {props.properties.map((element, i) => {
+        {this.props.properties.map((element, i) => {
           return (
-            <div className="col-md-4" key={i}>
+            <div className="col-md-4" key={element.address.full}>
               <Card
                 src={element.photos[0]}
                 title="For Sale"
@@ -30,6 +31,6 @@ class PropCardSection extends Component {
 }
 
 export default connect(
-  null,
+  mapStateToProps,
   { fetchProperties }
 )(PropCardSection);
