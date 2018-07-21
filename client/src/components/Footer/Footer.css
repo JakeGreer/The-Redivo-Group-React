@@ -1,76 +1,81 @@
 #footer {
-    position: relative;
-    width: 100% !important;
-    background-color: #202020 !important;
-    color: white;
-    text-align: center;
-    height: 100% !important;
-    margin-top: 5%;
-    padding: 15px;
+  position: relative;
+  width: 100% !important;
+  background-color: #202020 !important;
+  color: white;
+  text-align: center;
+  height: 100% !important;
+  margin-top: 5%;
+  padding: 15px;
 }
 
 .footer-logo {
-    padding-top: 7px;
+  padding-top: 100px;
+}
+
+#star {
+  padding-top: 90px;
 }
 
 #footer .top-footer .text .header {
-    padding: 5px 15px;
-    border-left: 2px solid #ccc;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    background-color: #202020 !important;
+  padding: 5px 15px;
+  border-left: 2px solid #ccc;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  background-color: #202020 !important;
 }
 
-#footer .quick-links-footer, #footer .foot-address {
-    margin: 0;
-    list-style: none;
+#footer .quick-links-footer,
+#footer .foot-address {
+  margin: 0;
+  list-style: none;
 }
-#footer .quick-links-footer li, #footer .foot-address li {
-    margin-bottom: 10px;
+#footer .quick-links-footer li,
+#footer .foot-address li {
+  margin-bottom: 10px;
 }
 #footer .foot-address li {
-    position: relative;
-    padding-left: 30px;
+  position: relative;
+  padding-left: 30px;
 }
-#footer .foot-address li i.fa{
-    position: absolute;
-    left: 0;
-    top: 3px;
+#footer .foot-address li i.fa {
+  position: absolute;
+  left: 0;
+  top: 3px;
 }
 #footer .quick-links-footer a {
-    color: #ffffff;
-    font-size: 16px;
+  color: #ffffff;
+  font-size: 16px;
 }
 
 .fa {
-    margin-right: 3px;
+  margin-right: 3px;
 }
 
 @media only screen and (max-width: 360px) {
 }
 
 @media only screen and (min-width: 375px) {
-    .footer-logo {
-
-    }
+  .footer-logo {
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .footer-logo {
-        display: none;
-    }
+  .footer-logo {
+    display: none;
+  }
 
-    #star {
-        display: none;
-    }
+  #star {
+    display: none;
+  }
 }
 @media only screen and (min-width: 770px) {
-    .footer-logo {
-        display: block;
-    }
+  .footer-logo {
+    display: block;
+  }
 
-    #star {
-        display: block;
-    }
+  #star {
+    display: block;
+  }
 }

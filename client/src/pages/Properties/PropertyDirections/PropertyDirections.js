@@ -6,10 +6,10 @@ const PropertyDirections = () => {
     <div>
       <div className="discover-text">
         <div className="discover-h-container">
-          <h1 className="discover-h-a">Area</h1>
-          <h1 className="discover-h-b">Selector</h1>
+          <h1 className="discover-h-a">Search</h1>
+          <h1 className="discover-h-b">Properties</h1>
         </div>
-        <p>Please Select a Property Type</p>
+        <p>Please search for a property</p>
       </div>
     </div>
   );
