@@ -1,9 +1,9 @@
 import React from "react";
 
-const Arrow = ({ size, direction }) => {
+const Arrow = ({ size, direction, onClick }) => {
   return (
     <div>
-      <a>
+      <a onClick={onClick}>
         <ion-icon size={size} name={`arrow-drop${direction}-circle`} />
       </a>
     </div>
