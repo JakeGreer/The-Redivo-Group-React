@@ -1,6 +1,6 @@
 import React from "react";
 import ImgSlide from "./ImgSlide";
-import "./Carousel.css";
+import "./style.css";
 
 const Carousel = props => {
   return (

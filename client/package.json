@@ -8,13 +8,17 @@
     "cors": "^2.8.4",
     "dotenv": "^5.0.0",
     "jscs": "^3.0.7",
+    "lodash": "^4.17.10",
     "moment": "^2.20.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
     "react-responsive-carousel": "^3.1.33",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0",
-    "react-slick": "^0.17.1"
+    "react-slick": "^0.17.1",
+    "redux": "^4.0.0",
+    "redux-promise": "^0.6.0"
   },
   "scripts": {
     "start": "react-scripts start",

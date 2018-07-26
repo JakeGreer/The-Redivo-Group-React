@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Jumbotron from "../../components/Jumbotron";
 import { Container } from "../../components/Grid";
 import PropertyDirections from "./PropertyDirections";
-import LocalHomeSlide from "./LocalHomeSlide";
+import LocalHomesSlide from "./LocalHomesSlide";
 import "./Properties.css";
 
 class Properties extends Component {
@@ -69,7 +69,7 @@ class Properties extends Component {
         <Jumbotron header="Properties" />
         <Container>
           <PropertyDirections />
-          <LocalHomeSlide />
+          <LocalHomesSlide />
         </Container>
       </div>
     );
