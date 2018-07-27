@@ -66,7 +66,7 @@ class Properties extends Component {
     return (
       <div>
         <Container>
-          <LocalHomesSlide />
+          {/* <LocalHomesSlide /> */}
           <PropertyDirections />
         </Container>
       </div>
