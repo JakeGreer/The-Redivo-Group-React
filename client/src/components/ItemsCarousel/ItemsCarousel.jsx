@@ -12,7 +12,7 @@ class ItemsCarousel extends Component {
           {/* <div className="col-2">
             <Arrow onClick={this.slideLeft} size="large" direction="left" />
           </div> */}
-          <div className="col-3">
+          <div className="col-4">
             <Card
               src="../public/img/slide2a.jpg"
               price="123123"
@@ -23,7 +23,7 @@ class ItemsCarousel extends Component {
               baths="2"
             />
           </div>
-          <div className="col-3">
+          <div className="col-4">
             <Card
               src="../public/img/slide1a.jpg"
               price="123123"
@@ -34,20 +34,9 @@ class ItemsCarousel extends Component {
               baths="2"
             />
           </div>
-          <div className="col-3">
+          <div className="col-4">
             <Card
               src="../public/img/slide1a.jpg"
-              price="123123"
-              title="Title"
-              address="Address"
-              sqrft="12,000"
-              bedrooms="3"
-              baths="2"
-            />
-          </div>
-          <div className="col-3">
-            <Card
-              src="../public/img/slide3a.jpg"
               price="123123"
               title="Title"
               address="Address"

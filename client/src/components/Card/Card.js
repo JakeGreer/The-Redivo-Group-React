@@ -4,11 +4,9 @@ import "./Card.css";
 const Card = props => {
   return (
     <div className="card card-wrapper">
-      <img
-        className="card-img-top img-fluid"
-        src={props.src}
-        alt="Property Image"
-      />
+      <div className="card-img-wrapper">
+        <img className="card-img-top" src={props.src} alt="Property Image" />
+      </div>
       <div className="card-price">{"$" + props.price}</div>
       <div className="card-block content">
         <h4 className="card-title">{props.title}</h4>

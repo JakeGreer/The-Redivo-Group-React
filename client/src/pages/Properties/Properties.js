@@ -65,8 +65,8 @@ class Properties extends Component {
   render() {
     return (
       <div>
-        <LocalHomesSlide />
         <Container>
+          <LocalHomesSlide />
           <PropertyDirections />
         </Container>
       </div>
