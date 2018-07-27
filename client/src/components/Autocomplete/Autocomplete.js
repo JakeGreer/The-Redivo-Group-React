@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import PlacesAutocomplete, {
   geocodeByAddress
 } from "react-places-autocomplete";
+import { withRouter } from "react-router";
 
 import defaultStyles from "./defaultStyles.js";
 import { postProperties } from "./actions";
@@ -44,6 +45,7 @@ class Autocomplete extends React.Component {
   // I've already written something take makes the city into a string to add to a
   // query string for simplyRETS
   handleFormSubmit = e => {
+    console.log(this.props.history);
     e.preventDefault();
     geocodeByAddress(this.state.address)
       .then(x => {
@@ -54,8 +56,14 @@ class Autocomplete extends React.Component {
               .replace(/\s/g, "+")
               .toLowerCase()
               .trim()
-          }, //in this callback is probably where you would make the query string using the city, maybe even call the API from here, up to you
-          () => this.props.postProperties({ query: this.state.cityString })
+          }, // Query API for property data to wire into redux
+          () =>
+            this.props.postProperties({ query: this.state.cityString }, () => {
+              console.log(this.props.history);
+              if (this.props.home) {
+                this.props.history.push("/properties");
+              }
+            })
         );
       })
       .catch(error => console.error(error));
@@ -119,4 +127,4 @@ class Autocomplete extends React.Component {
 export default connect(
   null,
   { postProperties }
-)(Autocomplete);
+)(withRouter(Autocomplete));

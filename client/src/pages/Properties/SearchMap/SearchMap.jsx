@@ -24,9 +24,9 @@ class SearchMap extends Component {
     const { handleSubmit } = this.props;
 
     return (
-      <form>
+      <div>
         <AutoComplete />
-      </form>
+      </div>
     );
   }
 }
