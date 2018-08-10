@@ -45,7 +45,6 @@ class Autocomplete extends React.Component {
   // I've already written something take makes the city into a string to add to a
   // query string for simplyRETS
   handleFormSubmit = e => {
-    console.log(this.props.history);
     e.preventDefault();
     geocodeByAddress(this.state.address)
       .then(x => {
@@ -59,7 +58,6 @@ class Autocomplete extends React.Component {
           }, // Query API for property data to wire into redux
           () =>
             this.props.postProperties({ query: this.state.cityString }, () => {
-              console.log(this.props.history);
               if (this.props.home) {
                 this.props.history.push("/properties");
               }

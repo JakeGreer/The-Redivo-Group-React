@@ -22,6 +22,7 @@
     "redux-promise": "^0.6.0"
   },
   "scripts": {
+    "create:container": "node scripts/create-container.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

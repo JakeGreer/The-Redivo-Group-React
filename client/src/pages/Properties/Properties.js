@@ -66,11 +66,9 @@ class Properties extends Component {
   render() {
     return (
       <div>
-        <Container>
-          {/* <LocalHomesSlide /> */}
-          <PropertyDirections />
-          <SearchMap />
-        </Container>
+        {/* <LocalHomesSlide /> */}
+        {/* <PropertyDirections /> */}
+        <SearchMap />
       </div>
     );
   }
