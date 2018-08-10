@@ -1,0 +1,35 @@
+.radio-wrapper {
+  display: inline-block;
+}
+
+.radio-wrapper input {
+  display: inline;
+  width: auto;
+  padding-left: 20px !important;
+}
+
+.radio-wrapper label {
+  margin-left: 15px;
+  color: white;
+}
+
+.map__dropdown {
+  z-index: 1;
+  position: absolute;
+  background-color: #202020;
+  width: 126px;
+}
+
+.map__btn {
+  background-color: #0eae9b;
+  color: white !important;
+  width: 126px;
+}
+
+.radio-wrapper input {
+  margin-left: 5px;
+}
+
+/* .map__dropdown {
+    display: none;
+  } */

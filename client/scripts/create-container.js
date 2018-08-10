@@ -7,6 +7,9 @@ const argPath = `${process.cwd()}\\${passedPath}`;
 if (!title || !argPath) {
   return new Error("Please pass 2 arguments");
 } else {
+  if (!fs.existsSync(argPath)) {
+    fs.mkdirSync(argPath);
+  }
   const js = `import React, { Component } from "react";
 import { connect } from "react-redux";
 
