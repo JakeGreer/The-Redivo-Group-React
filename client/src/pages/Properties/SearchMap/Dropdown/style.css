@@ -9,6 +9,7 @@
 }
 
 .radio-wrapper label {
+  display: inline-block !important;
   margin-left: 15px;
   color: white;
 }
@@ -17,18 +18,18 @@
   z-index: 1;
   position: absolute;
   background-color: #202020;
-  width: 126px;
+  width: 200px;
 }
 
 .map__btn {
   background-color: #0eae9b;
   color: white !important;
-  width: 126px;
+  width: 200px;
 }
 
-.radio-wrapper input {
-  margin-left: 5px;
-}
+/* .radio-wrapper input {
+  margin-left: 10px;
+} */
 
 /* .map__dropdown {
     display: none;

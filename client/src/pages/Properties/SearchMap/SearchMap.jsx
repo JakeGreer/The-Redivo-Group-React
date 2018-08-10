@@ -7,7 +7,9 @@ import AutoComplete from "../../../components/Autocomplete";
 import "./style.css";
 
 class SearchMap extends Component {
-  state = {};
+  state = {
+    propType: null
+  };
   //   onSubmit(values) {
   //     this.props.createPost(values, () => {
   //       this.props.history.push("/");
@@ -16,6 +18,11 @@ class SearchMap extends Component {
 
   render() {
     const { handleSubmit } = this.props;
+    const items = [
+      { title: "Residential", value: this.state.propType },
+      { title: "Commercial", value: this.state.propType },
+      { title: "Industrial", value: this.state.propType }
+    ];
 
     return (
       <div>
@@ -25,7 +32,7 @@ class SearchMap extends Component {
               <form>
                 <ul>
                   <li>
-                    <Dropdown />
+                    <Dropdown data={items}>Property Type</Dropdown>
                   </li>
                 </ul>
               </form>

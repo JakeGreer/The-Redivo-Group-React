@@ -7,17 +7,30 @@ class Dropdown extends Component {
   };
 
   renderDropdown = () => {
-    if (this.state.isHovering) {
+    const { data } = this.props;
+    if (this.state.isHovering && data) {
       return (
         <div>
           <div className="map__dropdown">
-            <a />
-            <div className="radio-wrapper">
-              <label>
-                Action
-                <input className="dropdown-item" type="checkbox" />
-              </label>
-            </div>
+            {data.map(item => {
+              return (
+                <div className="row">
+                  <div key={item.title} className="radio-wrapper">
+                    <div className="col-10">
+                      <label>{item.title}</label>
+                    </div>
+                    <div className="col-2">
+                      <input
+                        className="radio-item"
+                        value={item.value}
+                        type="checkbox"
+                        onChange
+                      />
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       );
@@ -39,7 +52,7 @@ class Dropdown extends Component {
         onMouseEnter={this.hover}
         onMouseLeave={this.notHover}
       >
-        <a className="btn map__btn">Property Type</a>
+        <a className="btn map__btn">{this.props.children}</a>
         {this.renderDropdown()}
       </div>
     );
