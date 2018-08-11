@@ -55,10 +55,10 @@ class SearchMap extends Component {
             google={this.props.google}
             zoom={14}
             style={{
-              width: "100%",
+              width: "50%",
               height: "50%",
               marginLeft: -25,
-              marginTop: 15
+              marginTop: 25
             }}
           >
             <Marker onClick={this.onMarkerClick} name={"Current location"} />
