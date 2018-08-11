@@ -12,6 +12,7 @@ if (!title || !argPath) {
   }
   const componentJSX = `import React, { Component } from "react";
 import { connect } from "react-redux";
+import "./style.css";
 
 class ${title} extends Component {
     state = {};

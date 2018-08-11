@@ -2,3 +2,11 @@
   padding: 25px;
   background-color: #202020;
 }
+
+.map-wrapper li {
+  margin-left: 40px;
+}
+
+.map-wrapper form {
+  margin-bottom: 10px;
+}

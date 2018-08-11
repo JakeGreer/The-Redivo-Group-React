@@ -11,6 +11,7 @@ if (!title || !argPath) {
     fs.mkdirSync(argPath);
   }
   const js = `import React, { Component } from "react";
+import "./style.css";
 
 class ${title} extends Component {
     state = {};
