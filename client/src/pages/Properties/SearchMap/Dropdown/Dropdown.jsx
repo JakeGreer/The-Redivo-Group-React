@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./style.css";
 
+import Checkbox from "./Checkbox";
+
 class Dropdown extends Component {
   state = {
     isHovering: false
@@ -20,12 +22,7 @@ class Dropdown extends Component {
                       <label>{item.title}</label>
                     </div>
                     <div className="col-2">
-                      <input
-                        className="radio-item"
-                        value={item.value}
-                        type="checkbox"
-                        onChange
-                      />
+                      <Checkbox />
                     </div>
                   </div>
                 </div>
