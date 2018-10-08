@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 import { Container } from "../../components/Grid";
-import PropertyDirections from "./PropertyDirections";
 import LocalHomesSlide from "./LocalHomesSlide";
+import SearchMap from "./SearchMap";
 import "./Properties.css";
 
 class Properties extends Component {
@@ -65,10 +65,8 @@ class Properties extends Component {
   render() {
     return (
       <div>
-        <Container>
-          <LocalHomesSlide />
-          <PropertyDirections />
-        </Container>
+        {/* <LocalHomesSlide /> */}
+        <SearchMap />
       </div>
     );
   }

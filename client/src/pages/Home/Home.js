@@ -29,7 +29,7 @@ const Home = props => {
         <GetStarted />
       </div>
       <div className="container">
-        <Autocomplete />
+        <Autocomplete home />
       </div>
     </div>
   );

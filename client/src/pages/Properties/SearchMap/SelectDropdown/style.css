@@ -1,0 +1,50 @@
+.map__dropdown-menu {
+  width: 186px;
+  background-color: #0eae9b;
+  color: white;
+  border-radius: 5px;
+}
+
+.map__dropdown {
+  width: 186px;
+  background-color: white;
+  position: absolute;
+  z-index: 1 !important;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #202020;
+}
+
+.map__dropdown-menu {
+  text-align: center;
+}
+
+.map__dropdown-menu:hover {
+  background: #0c9b8a;
+}
+
+.radio-wrapper {
+  text-align: left !important;
+  margin-top: 5px;
+  color: black;
+  border-bottom: 1px groove #a0a0a0;
+}
+
+.radio-wrapper:first-child {
+  margin-top: 0px !important;
+}
+
+.radio-wrapper:last-child {
+  border-bottom: none;
+  margin-bottom: -5px;
+}
+
+.radio-wrapper input {
+  position: absolute;
+  margin-top: 5px;
+  left: 80% !important;
+}
+
+.radio-wrapper label h6 {
+  display: inline;
+}
