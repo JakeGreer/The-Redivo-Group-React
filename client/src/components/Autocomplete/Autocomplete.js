@@ -56,12 +56,7 @@ class Autocomplete extends React.Component {
               .toLowerCase()
               .trim()
           }, // Query API for property data to wire into redux
-          () =>
-            this.props.postProperties({ query: this.state.cityString }, () => {
-              if (this.props.home) {
-                this.props.history.push("/properties");
-              }
-            })
+          () => this.props.postProperties({ query: this.state.cityString })
         );
       })
       .catch(error => console.error(error));

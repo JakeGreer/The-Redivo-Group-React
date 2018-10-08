@@ -1,11 +1,11 @@
 import _ from "lodash";
-import FETCH_LOCAL from "./constants";
+import { POST_PROPERTIES } from "../../components/Autocomplete/actions";
 
-export default function(state = {}, action) {
+export default function(state = [], action) {
   switch (action.type) {
-    case FETCH_LOCAL:
-      return state.payload;
+    case POST_PROPERTIES:
+      return action.payload;
     default:
-      return state.payload;
+      return state;
   }
 }
