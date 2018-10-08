@@ -10,8 +10,7 @@ if (!title || !argPath) {
   if (!fs.existsSync(argPath)) {
     fs.mkdirSync(argPath);
   }
-  const componentJSX = `import React, { Component } from "react";
-import { connect } from "react-redux";
+  const js = `import React, { Component } from "react";
 import "./style.css";
 
 class ${title} extends Component {
@@ -26,14 +25,7 @@ class ${title} extends Component {
     }
 }
 
-mapStateToProps(state) = () => {
-    return;
-}
-
-export default connect(
-    mapStateToProps,
-    null
-  )(${title});`;
+export default ${title};`;
 
   const componentPath = path.join(argPath, `${title}.jsx`);
   fs.writeFile(componentPath, componentJSX, err => {

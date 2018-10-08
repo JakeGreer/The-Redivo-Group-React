@@ -117,11 +117,6 @@ class Autocomplete extends React.Component {
   }
 }
 
-function mapStateToProps(state) {
-  console.log(state);
-  return { state };
-}
-
 export default connect(
   null,
   { postProperties }
