@@ -1,15 +1,14 @@
 import React, { Component } from "react";
-import { Field, reduxForm } from "redux-form";
 import { Link } from "react-router-dom";
+import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
 import { connect } from "react-redux";
-import Dropdown from "./Dropdown";
+import SelectDropdown from "./SelectDropdown";
+import MinMaxDropdown from "./MinMaxDropdown";
 import AutoComplete from "../../../components/Autocomplete";
 import "./style.css";
 
 class SearchMap extends Component {
-  state = {
-    propType: null
-  };
+  state = {};
   //   onSubmit(values) {
   //     this.props.createPost(values, () => {
   //       this.props.history.push("/");
@@ -18,10 +17,10 @@ class SearchMap extends Component {
 
   render() {
     const { handleSubmit } = this.props;
-    const items = [
-      { title: "Residential", value: this.state.propType },
-      { title: "Commercial", value: this.state.propType },
-      { title: "Industrial", value: this.state.propType }
+    const propTypes = [
+      { title: "Residential", action: this.props.actionName || null },
+      { title: "Commercial", action: this.props.actionName || null },
+      { title: "Industrial", action: this.props.actionName || null }
     ];
 
     return (
@@ -30,14 +29,23 @@ class SearchMap extends Component {
           <div className="container">
             <div className="row">
               <form>
-                <ul>
-                  <li>
-                    <Dropdown data={items}>Property Type</Dropdown>
+                <ul className="nav justify-content-center">
+                  <li className="nav-item">
+                    <SelectDropdown data={propTypes}>
+                      Property Type
+                    </SelectDropdown>
                   </li>
+                  {/* <li className="nav-item">
+                    <Dropdown data={propTypes}>Property Type</Dropdown>
+                  </li>
+                  <li className="nav-item">
+                    <Dropdown data={propTypes}>Property Type</Dropdown>
+                  </li> */}
                 </ul>
               </form>
             </div>
             <AutoComplete />
+            <div className="row" />
           </div>
         </div>
       </div>
@@ -45,32 +53,7 @@ class SearchMap extends Component {
   }
 }
 
-function validate(values) {
-  // console.log(values) -> { title: 'asdf', categories: 'asdf', content: 'asdf' }
-  const errors = {};
-
-  // Validate the inputs from 'values'
-  if (!values.title) {
-    errors.title = "Enter a title";
-  }
-  if (!values.categories) {
-    errors.categories = "Enter some categories";
-  }
-  if (!values.content) {
-    errors.content = "Enter some content please";
-  }
-
-  // If errors is empty, the form is fine to submit
-  // If errors has *any* properties, redux form assumes form is invalid
-  return errors;
-}
-
-export default reduxForm({
-  validate,
-  form: "PostsNewForm"
-})(
-  connect(
-    null,
-    null
-  )(SearchMap)
-);
+export default connect(
+  null,
+  null
+)(SearchMap);

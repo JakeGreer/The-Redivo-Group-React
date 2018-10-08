@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { Field, reduxForm } from "redux-form";
 import "./style.css";
 
-class Dropdown extends Component {
+class SelectDropdown extends Component {
   state = {
     isHovering: false
   };
@@ -12,22 +14,19 @@ class Dropdown extends Component {
       return (
         <div>
           <div className="map__dropdown">
-            {data.map(item => {
+            {data.map(({ title, action }) => {
               return (
-                <div className="row">
-                  <div key={item.title} className="radio-wrapper">
-                    <div className="col-10">
-                      <label>{item.title}</label>
-                    </div>
-                    <div className="col-2">
-                      <input
-                        className="radio-item"
-                        value={item.value}
-                        type="checkbox"
-                        onChange
-                      />
-                    </div>
-                  </div>
+                <div className="radio-wrapper" key={title}>
+                  <label>
+                    <h6>{title}</h6>
+                    <Field
+                      name={title}
+                      component="input"
+                      type="checkbox"
+                      id={title}
+                      onChange={action}
+                    />
+                  </label>
                 </div>
               );
             })}
@@ -59,4 +58,15 @@ class Dropdown extends Component {
   }
 }
 
-export default Dropdown;
+// mapStateToProps(state) = () => {
+//     return;
+// }
+
+export default reduxForm({
+  form: "MapForm"
+})(
+  connect(
+    null,
+    null
+  )(SelectDropdown)
+);
