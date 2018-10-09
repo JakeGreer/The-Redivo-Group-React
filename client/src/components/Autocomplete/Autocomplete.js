@@ -50,11 +50,7 @@ class Autocomplete extends React.Component {
       .then(x => {
         this.setState(
           {
-            cityString: x[0].formatted_address
-              .replace(/\s*,\s*|\s+,/g, " ")
-              .replace(/\s/g, "+")
-              .toLowerCase()
-              .trim()
+            cityString: x[0]
           }, // Query API for property data to wire into redux
           () => this.props.postProperties({ query: this.state.cityString })
         );

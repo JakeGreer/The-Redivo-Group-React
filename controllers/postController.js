@@ -7,7 +7,7 @@ module.exports = {
     let searchType = req.body.searchType;
 
     if (query) {
-      type += "q=houston";
+      type += "q=Houston,Texas";
     }
 
     if (searchType) {

@@ -68,7 +68,7 @@ ol {
   padding: 15px;
   font-size: 18px;
   display: block;
-  color: #ffffff;
+  color: #ffffff !important;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;

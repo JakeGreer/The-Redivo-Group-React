@@ -19,7 +19,7 @@ class LocalHomesSlide extends Component {
               sqrft={res.property.area}
               bedrooms={res.property.bedrooms}
               baths={res.property.bathsFull}
-              handleDetails={}
+              // handleDetails={}
             />
           </div>
         );
