@@ -35,14 +35,11 @@ class SearchMap extends Component {
                       Property Type
                     </SelectDropdown>
                   </li>
-<<<<<<< HEAD
-=======
                   <li className="nav-item">
                     <SelectDropdown data={propTypes}>
                       Property Type
                     </SelectDropdown>
                   </li>
->>>>>>> a14224cf9d6ab6600ee47a77af1db07b55881e66
                   {/* <li className="nav-item">
                     <Dropdown data={propTypes}>Property Type</Dropdown>
                   </li>
@@ -79,12 +76,6 @@ class SearchMap extends Component {
   }
 }
 
-<<<<<<< HEAD
-export default connect(
-  null,
-  null
-)(SearchMap);
-=======
 export default GoogleApiWrapper({
   apiKey: "AIzaSyB_-MtvPVq_lBduxbhguMF0qSgv2wBKdH8"
 })(
@@ -93,4 +84,3 @@ export default GoogleApiWrapper({
     null
   )(SearchMap)
 );
->>>>>>> a14224cf9d6ab6600ee47a77af1db07b55881e66
