@@ -65,7 +65,6 @@ class Properties extends Component {
   render() {
     return (
       <div>
-        <SearchMap />
         <LocalHomesSlide />
       </div>
     );
