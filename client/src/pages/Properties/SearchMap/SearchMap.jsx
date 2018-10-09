@@ -35,11 +35,6 @@ class SearchMap extends Component {
                       Property Type
                     </SelectDropdown>
                   </li>
-                  <li className="nav-item">
-                    <SelectDropdown data={propTypes}>
-                      Property Type
-                    </SelectDropdown>
-                  </li>
                   {/* <li className="nav-item">
                     <Dropdown data={propTypes}>Property Type</Dropdown>
                   </li>
@@ -52,7 +47,7 @@ class SearchMap extends Component {
             <AutoComplete />
             <div className="row" />
           </div>
-          <Map
+          {/* <Map
             google={this.props.google}
             zoom={14}
             style={{
@@ -69,18 +64,14 @@ class SearchMap extends Component {
                 <h1>Test</h1>
               </div>
             </InfoWindow>
-          </Map>
+          </Map> */}
         </div>
       </div>
     );
   }
 }
 
-export default GoogleApiWrapper({
-  apiKey: "AIzaSyB_-MtvPVq_lBduxbhguMF0qSgv2wBKdH8"
-})(
-  connect(
-    null,
-    null
-  )(SearchMap)
-);
+export default connect(
+  null,
+  null
+)(SearchMap);
