@@ -7,7 +7,8 @@ module.exports = {
     let searchType = req.body.searchType;
 
     if (query) {
-      type += "q=Houston,Texas";
+      console.log("query", query)
+      type += `q=${query.address_components[0].long_name},${query.address_components[2].long_name}`;
     }
 
     if (searchType) {
@@ -31,7 +32,9 @@ module.exports = {
       });
       res.on("end", function() {
         var resp = JSON.parse(body);
+        console.log(resp);
         response.json(resp);
+
       });
     });
   }

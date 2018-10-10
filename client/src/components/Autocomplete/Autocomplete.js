@@ -72,7 +72,8 @@ class Autocomplete extends React.Component {
   render() {
     const inputProps = {
       value: this.state.address,
-      onChange: this.onChange
+      onChange: this.onChange,
+      id: "autocomplete-dropdown"
     };
 
     //dropdown autocomplete

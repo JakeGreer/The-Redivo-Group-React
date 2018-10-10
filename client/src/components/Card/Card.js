@@ -34,6 +34,7 @@ const Card = props => {
           id={props.id}
           className="btn btn-primary text-center property-link"
           onClick={props.handleDetails}
+          data-index={props.index}
         >
           View Details
         </a>
