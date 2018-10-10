@@ -13,7 +13,7 @@ class PropertyDetail extends Component {
     }
 
     handleDetailsClick = (event) => {
-        event.preventDefault()
+        event.preventDefault();
         let selection = event.target.id;
         switch(selection) {
             case "detail":         
@@ -144,7 +144,7 @@ class PropertyDetail extends Component {
                     <div className="tab-content tab-blocks">
                         <ul className="info_slides">
                             <li><a onClick={this.handleDetailsClick} className="styler_color" id="detail">
-                            <i class="fas fa-bars"></i> DETAILS</a>
+                            <i className="fas fa-bars"></i> DETAILS</a>
                             
                             {this.state.detail ? 
                             <div className="text" style={textStyle}>
@@ -212,7 +212,7 @@ class PropertyDetail extends Component {
                             }
                             </li>
                             <li><a onClick={this.handleDetailsClick} className="styler_color" id="interior">
-                            <i class="fas fa-bars"></i>INTERIOR</a>
+                            <i className="fas fa-bars"></i>INTERIOR</a>
                             {this.state.interior ? 
                             <div className="text" style={textStyle}>
                                 {/* Props List for the Interior Section
@@ -282,7 +282,7 @@ class PropertyDetail extends Component {
                             }
                             </li>
                             <li><a onClick={this.handleDetailsClick} className="styler_color" id="exterior">
-                            <i class="fas fa-bars"></i>EXTERIOR</a>
+                            <i className="fas fa-bars"></i>EXTERIOR</a>
                             {this.state.exterior ? 
                             <div className="text" style={textStyle}>
                                 {/* Props Used for the Exterior Section
@@ -354,7 +354,7 @@ class PropertyDetail extends Component {
                                 (<div></div>)
                                 }
                             </li>
-                            <li><a onClick={this.handleDetailsClick} className="styler_color" id="additional"><i class="fas fa-bars"></i>ADDITIONAL DETAILS</a>
+                            <li><a onClick={this.handleDetailsClick} className="styler_color" id="additional"><i className="fas fa-bars"></i>ADDITIONAL DETAILS</a>
                             { this.state.additional ? 
                             <div className="text" style={textStyle}>
                                     {/* props used for the Additional Details section
