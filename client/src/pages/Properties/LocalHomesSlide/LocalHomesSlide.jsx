@@ -1,25 +1,26 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import Card from "../../../components/Card";
-import PropertyDetail from "../PropertyDetail";
 
 import "./style.css";
 
 class LocalHomesSlide extends Component {
-
-  handleDetails = (event) => {
+  handleDetails = event => {
     let active = event.currentTarget.dataset.tag;
     this.setState({
       active: active
-    })
-  }
+    });
+  };
 
   renderCards = () => {
     const { data } = this.props;
     if (data) {
       return data.map((res, index) => {
         return (
-          <div key={res.mlsId} className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+          <div
+            key={res.mlsId}
+            className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12"
+          >
             <Card
               src={res.photos[0]}
               price={res.listPrice}
@@ -29,7 +30,7 @@ class LocalHomesSlide extends Component {
               bedrooms={res.property.bedrooms}
               baths={res.property.bathsFull}
               index={index}
-              //handleDetails={}
+              id={res.mlsId}
             />
           </div>
         );

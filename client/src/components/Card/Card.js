@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Card.css";
 
 const Card = props => {
@@ -30,14 +31,14 @@ const Card = props => {
             </li>
           </ul>
         </div>
-        <a
+        <Link
           id={props.id}
           className="btn btn-primary text-center property-link"
-          onClick={props.handleDetails}
+          to={`/properties/${props.id}`}
           data-index={props.index}
         >
           View Details
-        </a>
+        </Link>
       </div>
     </div>
   );
