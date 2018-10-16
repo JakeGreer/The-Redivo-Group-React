@@ -1,33 +1,37 @@
-
 /* This CSS section is for the top section of the page which contains the address which is seperated into two parts. an upper address and a lower address. Also contains the price */
 /*****************************************************************************************/
 /*****************************************************************************************/
 /*****************************************************************************************/
 
+.prop-page-wrapper {
+  padding: 80px;
+}
+
 .detail-address {
-    margin-top: 50px;
-    margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .address-top {
-    color: #666;
-    font-size: 30px;
-    line-height: 46px;
+  color: #666;
+  font-size: 30px;
+  line-height: 46px;
 }
 
 .address-bottom {
-    color: #666;
-    font-size: 20px;
-    line-height: 36px;
+  color: #666;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .detail-price {
-    margin-top: 50px;
-    font-size: 30px;
-    text-align: right;
-    font-weight: bold;
-    line-height: 46px;
-    color: #0eae9b;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 46px;
+  color: #0eae9b;
+}
+
+.redivo-img {
+  float: right;
 }
 
 /* This CSS section is for the side section next to the carousel. It contains the logo the few main characteristics and the phone number */
@@ -36,183 +40,184 @@
 /*****************************************************************************************/
 
 .carousel .control-dots .dot {
-    background: #0eae9b;
-    
+  background: #0eae9b;
 }
 
 .control-dots .dot.selected {
-    background: #09796c;
+  background: #09796c;
 }
 
 .details-info .item-id {
-    color: #666;
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 15px;
+  color: #666;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .details-info .det-characteristics {
-    overflow: hidden;
-    margin-bottom: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .details-info .det-characteristics ul li {
-    float: left;
-    font-size: 13px;
-    line-height: 13px;
-    text-align: center;
-    text-transform: capitalize;
-    color: #666;
-    display: inline-block;
+  float: left;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #666;
+  display: inline-block;
 }
 
 .details-info .det-characteristics ul li:nth-child(even) {
-    padding: 0 10px 0 10px;
-    margin: 0 10px 0 10px;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+  padding: 0 10px 0 10px;
+  margin: 0 10px 0 10px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .det-characteristics ul {
-    padding: 0;
-    list-style: none;
-    margin-bottom: 20px;
-    overflow: hidden;
-    margin-left: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
+  overflow: hidden;
+  margin-left: 0;
 }
 
 .details-info .details-name {
-    color: #666;
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 22px;
+  color: #666;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 36px;
 }
 
-.details-info .details-place {
-    color: #666;
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 22px;
+.details-place {
+  color: #666;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 36px;
 }
 
-.details-info .details-phone {
-    color: #666;
-    font-size: 15px;
-    line-height: 22px;
+.details-phone {
+  color: #666;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-
 
 /* This CSS section is used for the tabs with the arrow icons. */
 /*****************************************************************************************/
 /*****************************************************************************************/
 /*****************************************************************************************/
 .tabs {
-    margin: 0;
-    list-style: none;
-    position: relative;
-    bottom: -2px;
-    overflow: hidden;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  bottom: -2px;
+  overflow: hidden;
 }
 
 .tabs li {
-    float: left;
+  float: left;
 }
 
 .info_slides {
-    margin: 0;
-    border: 1px solid #f1f1f1;
+  margin: 0;
+  border: 1px solid #f1f1f1;
 }
 
 .info_slides li {
-    list-style: none !important;
+  list-style: none !important;
 }
 
 .tab-content {
-    background-color: #fff;
-    clear: both;
+  background-color: #fff;
+  clear: both;
 }
 
 .info_slides > li a {
-    display: block;
-    font-weight: bold;
-    padding: 12px 34px;
-    font-size: 18px;
-    text-transform: uppercase;
-    position: relative;
-    text-decoration: none;
-    outline: none;
+  display: block;
+  font-weight: bold;
+  padding: 12px 34px;
+  font-size: 18px;
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+  outline: none;
 }
 
 .info_slides > li {
-    border-top: 1px solid #d6d5d5;
-    list-style: none;
+  border-top: 1px solid #d6d5d5;
+  list-style: none;
 }
 
 .info_slides > li:first-child {
-    border: none;
+  border: none;
 }
 
 .info_slides > li a .fa-angle-right {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    left: 6px;
-    top: 50%;
-    margin-top: -10px;
-    font-size: 18px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  margin-top: -10px;
+  font-size: 18px;
 }
 
 .info_slides > li a .fa-bars {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    left: 6px;
-    top: 50%;
-    margin-top: -10px;
-    font-size: 18px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  margin-top: -10px;
+  font-size: 18px;
 }
-
 
 a {
-    outline: none;
+  outline: none;
 }
 
-.styler_color, .styler_hover_color:hover, .styler_parent_active.active > .styler_active_color {
-    color: #0eae9b !important;
+.styler_color,
+.styler_hover_color:hover,
+.styler_parent_active.active > .styler_active_color {
+  color: #0eae9b !important;
 }
 
 .info_slides {
-    border: none;
-    padding: 10px 0;
-    border: 1px solid #dedddd;
+  border: none;
+  padding: 10px 0;
+  border: 1px solid #dedddd;
 }
 
 .tabs li.active a {
-    border-left: 1px solid #dedddd;
-    border-right: 1px solid #dedddd;
-    border-top: 2px solid #dedddd;
-    border-bottom: none;
-    font-weight: bold;
-    color: #000000;
-    background-color: #ffffff !important;
+  border-left: 1px solid #dedddd;
+  border-right: 1px solid #dedddd;
+  border-top: 2px solid #dedddd;
+  border-bottom: none;
+  font-weight: bold;
+  color: #000000;
+  background-color: #ffffff !important;
 }
 
 .tabs li a {
-    padding: 15px 20px;
-    text-transform: uppercase;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    margin-right: 0;
-    border-top: 2px solid #dedddd;
-    border-right: 1px solid #dedddd;
-    border-bottom: 1px solid #dedddd;
-    border-left: 1px solid #dedddd;
-    display: block;
-    font-size: 15px;
-    min-width: 184px;
-    text-align: center;
-    color: #ffffff;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin-right: 0;
+  border-top: 2px solid #dedddd;
+  border-right: 1px solid #dedddd;
+  border-bottom: 1px solid #dedddd;
+  border-left: 1px solid #dedddd;
+  display: block;
+  font-size: 15px;
+  min-width: 184px;
+  text-align: center;
+  color: #ffffff;
 }
 
 /* The CSS below is used for the table that is shown when a tab is clicked. Specifically only for the table. Currently it is not being displayed. This will be fixed and handled by a button event */
@@ -221,47 +226,47 @@ a {
 /*****************************************************************************************/
 
 table {
-    border-spacing: 0;
-    border-collapse: collapse;
+  border-spacing: 0;
+  border-collapse: collapse;
 }
 
 .info_slides > li .text p {
-    font-size: 13px;
-    color: #666666;
-    line-height: 19px;
-    margin-bottom: 20px;
+  font-size: 13px;
+  color: #666666;
+  line-height: 19px;
+  margin-bottom: 20px;
 }
 
 .info_slides li .text {
-    padding: 0 25px 13px 35px;
+  padding: 0 25px 13px 35px;
 }
 
 .left-tab-wrapper {
-    border-right: 1px solid #d6d5d5;
+  border-right: 1px solid #d6d5d5;
 }
 
 .left-tab-wrapper .details-values {
-    width: 97%;
+  width: 97%;
 }
 
 .details-values tr td:first-child {
-    min-width: 155px;
+  min-width: 155px;
 }
 
 .details-values tr:last-child td {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .details-values td {
-    font-size: 13px;
-    color: #000;
-    border-bottom: 1px solid #d6d5d5;
-    padding: 8px 0 3px 0;
-    width: 155px;
+  font-size: 13px;
+  color: #000;
+  border-bottom: 1px solid #d6d5d5;
+  padding: 8px 0 3px 0;
+  width: 155px;
 }
 
 tr {
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
 }

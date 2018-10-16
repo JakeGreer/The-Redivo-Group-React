@@ -1,16 +1,30 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+
+import { postProperties } from "../../../components/Autocomplete/actions";
 import Card from "../../../components/Card";
 
 import "./style.css";
 
 class LocalHomesSlide extends Component {
-  handleDetails = event => {
-    let active = event.currentTarget.dataset.tag;
-    this.setState({
-      active: active
-    });
-  };
+  componentDidMount() {
+    // If nothing has been searched just use data from
+    // San Clemente
+    if (!this.props.data) {
+      this.props.postProperties(
+        {
+          query: {
+            address_components: [
+              { long_name: "Houston" },
+              { long_name: "Placeholder" },
+              { long_name: "Texas" }
+            ]
+          }
+        },
+        () => null
+      );
+    }
+  }
 
   renderCards = () => {
     const { data } = this.props;
@@ -51,4 +65,7 @@ function mapStateToProps({ SearchedData }) {
   return { data: SearchedData.data };
 }
 
-export default connect(mapStateToProps)(LocalHomesSlide);
+export default connect(
+  mapStateToProps,
+  { postProperties }
+)(LocalHomesSlide);
