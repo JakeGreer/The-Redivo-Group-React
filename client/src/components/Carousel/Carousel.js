@@ -55,7 +55,7 @@ const Carousel = props => {
           console.log("clicked");
         }}
       >
-        <i class="fas fa-angle-right carousel-angle-right" />
+        <i className="fas fa-angle-right carousel-angle-right" />
       </a>
     </div>
   );
