@@ -44,7 +44,7 @@ class SearchMap extends Component {
                 </ul>
               </form>
             </div>
-            <AutoComplete />
+            <AutoComplete nav={() => null} />
             <div className="row" />
           </div>
           {/* <Map

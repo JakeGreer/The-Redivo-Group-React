@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Properties from "./pages/Properties";
+import PropertyDetail from "./pages/PropertyDetail";
 import reducers from "./reducers";
 import PropertyDetail from "./pages/Properties/PropertyDetail";
 

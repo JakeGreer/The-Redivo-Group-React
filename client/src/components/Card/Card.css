@@ -10,6 +10,10 @@
   background-color: rgba(00, 0, 0, 0.5);
 }
 
+.card {
+  min-height: 455px;
+}
+
 .card-img-wrapper img {
   max-height: 250px;
   width: 100%;
