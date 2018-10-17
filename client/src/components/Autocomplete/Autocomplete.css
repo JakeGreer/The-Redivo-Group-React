@@ -1,20 +1,21 @@
 .autocompleteItem {
-    background-color: #dfdfdf !important;
-    cursor: pointer;
-  }
-
-  .autocomplete-btn{
-    margin: -1px 0px 0 0px;
-    padding: 8px 20px 8px 20px;
-    background-color: #0eae9b !important;
-    font-family: 'Arial', 'sans-serrif' !important;
-    color: #FFFFFF;
-    font-size: 12pt;
+  background-color: #dfdfdf !important;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 768px)  {
-    .autocomplete-btn{
-        margin: 0px 0 0 0;
-        position: relative;
-   }
+.autocomplete-btn {
+  margin: -1px 0px 0 0px;
+  padding: 8px 20px 8px 20px;
+  background-color: #0eae9b !important;
+  font-family: "Arial", "sans-serrif" !important;
+  color: #ffffff;
+  font-size: 12pt;
+}
+
+@media screen and (max-width: 768px) {
+  .autocomplete-btn {
+    margin: 0px 0 0 0;
+    position: relative;
+    overflow: visible;
+  }
 }
