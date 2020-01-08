@@ -1,7 +1,7 @@
 import React from "react";
 import Testimonials from "./Testimonials";
 import AccordionData from "./AccordionData";
-import { Carousel as ReactCarousel } from "react-responsive-carousel";
+//import { Carousel as ReactCarousel } from "react-responsive-carousel";
 import AccordionMenu from "./AccordionMenu";
 import "./Testimonial.css";
 import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -16,7 +16,7 @@ const Testimonial = props => {
               <div className="testimonial-h-container-a">
                 <h1 className="testimonial-h-a">TESTIMONIAL</h1>
               </div>
-              <ReactCarousel
+              {/* <ReactCarousel
                 emulateTouch={true}
                 infiniteLoop={true}
                 dynamicHeight={true}
@@ -58,7 +58,7 @@ const Testimonial = props => {
                     </div>
                   );
                 })}
-              </ReactCarousel>
+              </ReactCarousel> */}
             </div>
             <div className="col-md-6 mx-auto">
               <div className="testimonial-h-container-b">

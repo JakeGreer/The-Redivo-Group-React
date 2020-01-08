@@ -14,7 +14,6 @@ import Contact from "./pages/Contact";
 import Properties from "./pages/Properties";
 import PropertyDetail from "./pages/PropertyDetail";
 import reducers from "./reducers";
-import PropertyDetail from "./pages/Properties/PropertyDetail";
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
